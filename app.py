@@ -41,6 +41,16 @@ st.markdown("""
         background: linear-gradient(135deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%);
         color: var(--text-light);
     }
+    .block-container {
+        max-width: 100% !important;
+        overflow-x: hidden;
+    }
+    @media (max-width: 768px) {
+        .block-container {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+    }
 
     /* Headers */
     h1, h2, h3, .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
@@ -90,13 +100,30 @@ st.markdown("""
         border: 1px solid rgba(108, 92, 231, 0.2);
         border-radius: 8px;
         padding: 10px 14px;
-        display: block;
         margin-bottom: 4px;
         transition: all 0.2s ease;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
     .stCheckbox label:hover {
         background: rgba(108, 92, 231, 0.2);
         border-color: rgba(108, 92, 231, 0.4);
+    }
+    .stCheckbox label p {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        .stCheckbox label {
+            padding: 8px 10px;
+            font-size: 0.9rem;
+        }
+        .stButton > button {
+            font-size: 0.85rem !important;
+            padding: 6px 10px !important;
+        }
     }
 
     /* Success / Error / Warning / Info boxes */
@@ -759,11 +786,15 @@ def comprobar_respuesta(pregunta, letras_seleccionadas):
     return correctas == seleccionadas
 
 
+PREGUNTAS_POR_PAGINA = 3
+
+
 def pagina_examen():
     preguntas = st.session_state.preguntas
-    indice = st.session_state.indice
     total = len(preguntas)
     modo = st.session_state.modo
+    pag = st.session_state.indice
+    total_paginas = (total + PREGUNTAS_POR_PAGINA - 1) // PREGUNTAS_POR_PAGINA
 
     if not preguntas:
         st.session_state.pagina = "inicio"
@@ -799,6 +830,9 @@ def pagina_examen():
             st.rerun()
             return
 
+    inicio_pag = pag * PREGUNTAS_POR_PAGINA
+    fin_pag = min(inicio_pag + PREGUNTAS_POR_PAGINA, total)
+
     # Header
     col1, col2, col3 = st.columns([1, 3, 1])
     with col1:
@@ -806,7 +840,7 @@ def pagina_examen():
             st.session_state.pagina = "inicio"
             st.rerun()
     with col2:
-        st.progress((indice + 1) / total, text=f"Pregunta {indice + 1} de {total}")
+        st.progress(fin_pag / total, text=f"Preguntas {inicio_pag + 1}–{fin_pag} de {total}")
     with col3:
         if tiempo_restante is not None:
             mins = int(tiempo_restante // 60)
@@ -819,42 +853,40 @@ def pagina_examen():
 
     st.divider()
 
-    pregunta = preguntas[indice]
+    # Renderizar las preguntas de esta página
+    for idx in range(inicio_pag, fin_pag):
+        pregunta = preguntas[idx]
 
-    if pregunta.get("origen"):
-        st.caption(f"📁 {pregunta['origen']}")
+        if pregunta.get("origen"):
+            st.caption(f"📁 {pregunta['origen']}")
 
-    st.markdown(f"### {pregunta['texto']}")
+        st.markdown(f"### Pregunta {idx + 1}: {pregunta['texto']}")
 
-    st.caption("Selecciona la(s) respuesta(s) correcta(s)")
-    st.write("")
+        ya_respondida = idx in st.session_state.respuestas
 
-    ya_respondida = indice in st.session_state.respuestas
+        _render_pregunta_checkboxes(pregunta, idx, ya_respondida, modo)
 
-    _render_pregunta_checkboxes(pregunta, indice, ya_respondida, modo)
+        if modo in ("practica", "repaso") and ya_respondida:
+            _mostrar_feedback(pregunta, idx)
 
-    # Feedback
-    if modo in ("practica", "repaso") and ya_respondida:
-        _mostrar_feedback(pregunta, indice)
+        if modo == "examen" and st.session_state.examen_terminado and ya_respondida:
+            _mostrar_feedback(pregunta, idx)
 
-    if modo == "examen" and st.session_state.examen_terminado and ya_respondida:
-        _mostrar_feedback(pregunta, indice)
-
-    st.divider()
+        st.divider()
 
     # Navegación
     col_prev, col_mid, col_next = st.columns([1, 2, 1])
 
     with col_prev:
-        if indice > 0:
+        if pag > 0:
             if st.button("← Anterior", use_container_width=True):
-                st.session_state.indice -= 1
+                st.session_state.indice = pag - 1
                 st.rerun()
 
     with col_next:
-        if indice < total - 1:
+        if pag < total_paginas - 1:
             if st.button("Siguiente →", use_container_width=True):
-                st.session_state.indice += 1
+                st.session_state.indice = pag + 1
                 st.rerun()
         elif len(st.session_state.respuestas) == total:
             if modo == "examen" and not st.session_state.examen_terminado:
@@ -864,15 +896,17 @@ def pagina_examen():
                 if st.button("📊 Ver resumen", type="primary", use_container_width=True):
                     finalizar_examen()
 
-    # Navegación rápida
+    # Navegación rápida por páginas
     with col_mid:
-        max_nav = min(total, 10)
+        max_nav = min(total_paginas, 10)
         cols = st.columns(max_nav)
         for i in range(max_nav):
             with cols[i]:
-                respondida = i in st.session_state.respuestas
-                label = "●" if respondida else "○"
-                if st.button(label, key=f"nav_{i}", help=f"Pregunta {i+1}"):
+                pg_inicio = i * PREGUNTAS_POR_PAGINA
+                pg_fin = min(pg_inicio + PREGUNTAS_POR_PAGINA, total)
+                todas_respondidas = all(j in st.session_state.respuestas for j in range(pg_inicio, pg_fin))
+                label = "●" if todas_respondidas else "○"
+                if st.button(label, key=f"nav_{i}", help=f"Preguntas {pg_inicio+1}–{pg_fin}"):
                     st.session_state.indice = i
                     st.rerun()
 
