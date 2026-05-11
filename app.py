@@ -52,6 +52,11 @@ st.markdown("""
         }
     }
 
+    /* Force light text everywhere */
+    .stApp, .stApp p, .stApp span, .stApp label, .stApp div {
+        color: #E8E8F0;
+    }
+
     /* Headers */
     h1, h2, h3, .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
         color: #A29BFE !important;
@@ -104,12 +109,14 @@ st.markdown("""
         transition: all 0.2s ease;
         word-wrap: break-word;
         overflow-wrap: break-word;
+        color: #E8E8F0 !important;
     }
     .stCheckbox label:hover {
         background: rgba(108, 92, 231, 0.2);
         border-color: rgba(108, 92, 231, 0.4);
     }
-    .stCheckbox label p {
+    .stCheckbox label p, .stCheckbox label span {
+        color: #E8E8F0 !important;
         word-wrap: break-word;
         overflow-wrap: break-word;
     }
