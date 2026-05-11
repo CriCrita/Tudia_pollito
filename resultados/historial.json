@@ -1,0 +1,30 @@
+[
+  {
+    "fecha": "11/05/2026 18:24",
+    "modo": "examen",
+    "aciertos": 0,
+    "total": 5,
+    "porcentaje": 0,
+    "falladas": [
+      "515e02ce8684",
+      "199cfe774220",
+      "966c66732d22",
+      "33c54b1f3ef3",
+      "a2a797c4e78d"
+    ]
+  },
+  {
+    "fecha": "11/05/2026 21:28",
+    "modo": "examen",
+    "aciertos": 0,
+    "total": 5,
+    "porcentaje": 0,
+    "falladas": [
+      "71011fed89d1",
+      "76d87edd9e1c",
+      "84f48b8a2922",
+      "8efdd5835c89",
+      "718a58a7f318"
+    ]
+  }
+]

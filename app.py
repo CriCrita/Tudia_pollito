@@ -384,13 +384,14 @@ def _es_encabezado(linea: str) -> bool:
 
 
 def _limpiar_texto_pdf(texto: str) -> str:
-    texto = re.sub(r"\b[a-zA-Z]\s*[«»\^<>|{}~]\s*[a-zA-Z]?\b", "", texto)
-    texto = re.sub(r"[«»\^|{}~]", "", texto)
+    texto = re.sub(r"[«»\^|{}~±]", " ", texto)
     texto = re.sub(r"\(\s*\)", "", texto)
-    texto = re.sub(r"\s{3,}", " ", texto)
-    texto = re.sub(r"FIGURA\s+\d+[-–]\d+[^.]*\.", "", texto)
-    texto = re.sub(r"TABLA\s+\d+[-–]\d+[^.]*\.", "", texto)
-    texto = re.sub(r"Capítulo \d+.*?Problemas", "", texto)
+    texto = re.sub(r"FIGURA\s+\d+[-–]\d+[^.]{0,200}\.", "", texto)
+    texto = re.sub(r"TABLA\s+\d+[-–]\d+[^.]{0,200}\.", "", texto)
+    texto = re.sub(r"F[KI]G?URA\s+\d+", "", texto, flags=re.IGNORECASE)
+    texto = re.sub(r"(?:\b[A-Z]{1,3}[0-9]*\s*[''\"*→←↔\-]+\s*){2,}", " ", texto)
+    texto = re.sub(r"(?:[A-Z]{1,2}['\"]?\s+){4,}", " ", texto)
+    texto = re.sub(r"\s{2,}", " ", texto)
     return texto.strip()
 
 
@@ -519,7 +520,11 @@ def buscar_explicacion_temario(pregunta: dict, temario: str) -> str:
     if puntuados:
         fragmentos = []
         textos_vistos = set()
-        for _, p in puntuados[:3]:
+        for _, p in puntuados[:8]:
+            palabras_reales = re.findall(r"\b[a-záéíóúñü]{4,}\b", p.lower())
+            ratio_texto = len(" ".join(palabras_reales)) / max(len(p), 1)
+            if len(palabras_reales) < 25 or ratio_texto < 0.35:
+                continue
             corte = _cortar_en_frase(p, 1000)
             p = p[:corte]
             p_corto = p[:120]
