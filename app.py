@@ -957,7 +957,7 @@ def _render_pregunta_checkboxes(pregunta, indice, ya_respondida, modo):
             if es_correcta and fue_elegida:
                 color, icono = "#A29BFE", "✅"
             elif es_correcta and not fue_elegida:
-                color, icono = "#A29BFE", "🟢"
+                color, icono = "#A29BFE", "✅"
             elif not es_correcta and fue_elegida:
                 color, icono = "#FF6B6B", "❌"
             else:
@@ -974,8 +974,7 @@ def _mostrar_feedback(pregunta, indice):
     if resp["correcta"]:
         st.success("✅ ¡Correcto!")
     else:
-        correctas_str = ", ".join(pregunta["respuesta"])
-        st.error(f"❌ Incorrecto — Respuesta correcta: {correctas_str}")
+        st.error("❌ Incorrecto")
         temario = cargar_temario()
         explicacion = buscar_explicacion_temario(pregunta, temario)
         st.info(explicacion)
