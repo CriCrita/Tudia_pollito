@@ -947,6 +947,26 @@ def _render_pregunta_checkboxes(pregunta, indice, ya_respondida, modo):
                 st.rerun()
             else:
                 st.warning("Selecciona al menos una opción.")
+    else:
+        correctas = set(pregunta["respuesta"])
+        elegidas = set(seleccion_previa)
+        for opt in pregunta["opciones"]:
+            letra = opt["letra"]
+            es_correcta = letra in correctas
+            fue_elegida = letra in elegidas
+            if es_correcta and fue_elegida:
+                color, icono = "#A29BFE", "✅"
+            elif es_correcta and not fue_elegida:
+                color, icono = "#A29BFE", "🟢"
+            elif not es_correcta and fue_elegida:
+                color, icono = "#FF6B6B", "❌"
+            else:
+                color, icono = "#A0A0C0", ""
+            st.markdown(
+                f'<p style="color:{color}; margin:4px 0;">'
+                f'{icono} {letra}) {opt["texto"]}</p>',
+                unsafe_allow_html=True,
+            )
 
 
 def _mostrar_feedback(pregunta, indice):
