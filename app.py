@@ -509,9 +509,20 @@ def _extraer_bigramas(texto: str) -> set[str]:
     return {f"{palabras[i]} {palabras[i+1]}" for i in range(len(palabras) - 1)}
 
 
+def _limpiar_explicacion(texto):
+    texto = re.sub(r'^Todas\s+(las\s+)?(opciones|afirmaciones)\s+son\s+correctas\.?\s*', '', texto, flags=re.IGNORECASE)
+    texto = re.sub(r'^Las\s+\w+\s+opciones\s+correctas\s+son[^.]*\.\s*', '', texto, flags=re.IGNORECASE)
+    texto = re.sub(r'^La\s+opción\s+\w+\s+es\s+(correcta|falsa|incorrecta)\s*(porque\s+)?[:\s]*', '', texto, flags=re.IGNORECASE)
+    texto = re.sub(r'^Ninguna\s+de\s+las\s+(afirmaciones|opciones)\s+[^.]*correcta[^.]*\.\s*', '', texto, flags=re.IGNORECASE)
+    texto = re.sub(r'\s*Las\s+(demás|otras)\s+opciones\s+(son\s+)?(incorrectas|falsas)[:\.].*$', '', texto, flags=re.DOTALL)
+    texto = re.sub(r'\s*La\s+opción\s+\w+\s+(es\s+)?(incorrecta|falsa)\s*(porque\s+)?[^.]*\.', '', texto)
+    texto = re.sub(r'\s*La\s+opción\s+\w+\s+(no\s+se\s+incluye|también\s+contiene)[^.]*\.', '', texto)
+    return texto.strip()
+
+
 def buscar_explicacion_temario(pregunta: dict, temario: str) -> str:
     if pregunta.get("explicacion"):
-        return pregunta["explicacion"]
+        return _limpiar_explicacion(pregunta["explicacion"])
 
     respuestas_correctas = pregunta["respuesta"]
 
@@ -520,7 +531,7 @@ def buscar_explicacion_temario(pregunta: dict, temario: str) -> str:
         if opt["letra"] in respuestas_correctas:
             textos_correctas.append(f"**{opt['letra']}) {opt['texto']}**")
 
-    header = "Las respuestas correctas son:\n\n" + "\n\n".join(f"- {t}" for t in textos_correctas)
+    header = ""
 
     if not temario:
         return header
@@ -570,12 +581,11 @@ def buscar_explicacion_temario(pregunta: dict, temario: str) -> str:
 
         if fragmentos:
             return (
-                header + "\n\n"
                 "📖 **Del temario:**\n\n"
                 + "\n\n---\n\n".join(f"> {f}" for f in fragmentos)
             )
 
-    return header
+    return ""
 
 
 # ─── Inicializar estado ───
@@ -977,7 +987,8 @@ def _mostrar_feedback(pregunta, indice):
         st.error("❌ Incorrecto")
         temario = cargar_temario()
         explicacion = buscar_explicacion_temario(pregunta, temario)
-        st.info(explicacion)
+        if explicacion:
+            st.info(explicacion)
 
 
 def pagina_resultados():
@@ -1022,7 +1033,8 @@ def pagina_resultados():
 
             if not resp.get("correcta"):
                 explicacion = buscar_explicacion_temario(pregunta, temario)
-                st.info(explicacion)
+                if explicacion:
+                    st.info(explicacion)
 
     st.divider()
     col1, col2 = st.columns(2)
