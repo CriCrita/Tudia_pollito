@@ -1,5 +1,5 @@
 """
-ExamForge — App de práctica de exámenes tipo test
+TudiaPollito — App de práctica de exámenes tipo test
 Ejecutar: streamlit run app.py
 """
 
@@ -16,7 +16,7 @@ RESULTADOS_DIR = Path("resultados")
 DATA_DIR = Path("data")
 RESULTADOS_DIR.mkdir(exist_ok=True)
 
-st.set_page_config(page_title="ExamForge", page_icon="📝", layout="centered")
+st.set_page_config(page_title="TudiaPollito", page_icon="🐥", layout="centered")
 
 st.markdown("""
 <style>
@@ -638,7 +638,7 @@ def mostrar_estadisticas(historial: list[dict]):
 # ─── Páginas ───
 
 def pagina_inicio():
-    st.title("📝 ExamForge")
+    st.title("🐥 TudiaPollito")
     st.markdown("**Practica tus exámenes tipo test — Bioquímica**")
     st.divider()
 
@@ -867,7 +867,11 @@ def pagina_examen():
         if pregunta.get("origen"):
             st.caption(f"📁 {pregunta['origen']}")
 
-        st.markdown(f"### Pregunta {idx + 1}: {pregunta['texto']}")
+        multi = len(pregunta.get("respuesta", [])) > 1
+        titulo_q = f"### Pregunta {idx + 1}: {pregunta['texto']}"
+        if multi:
+            titulo_q += "\n*(varias respuestas son correctas)*"
+        st.markdown(titulo_q)
 
         ya_respondida = idx in st.session_state.respuestas
 
@@ -950,7 +954,8 @@ def _mostrar_feedback(pregunta, indice):
     if resp["correcta"]:
         st.success("✅ ¡Correcto!")
     else:
-        st.error("❌ Incorrecto")
+        correctas_str = ", ".join(pregunta["respuesta"])
+        st.error(f"❌ Incorrecto — Respuesta correcta: {correctas_str}")
         temario = cargar_temario()
         explicacion = buscar_explicacion_temario(pregunta, temario)
         st.info(explicacion)
