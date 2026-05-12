@@ -296,9 +296,11 @@ def parsear_preguntas(texto: str, origen: str = "") -> list[dict]:
 
             match_opt = re.match(r"[-*]?\s*([a-eA-E])\)\s*(.*)", linea_strip)
             if match_opt:
+                texto_opt = match_opt.group(2).strip()
+                texto_opt = re.sub(r'^[a-eA-E][\.\)]\s*', '', texto_opt)
                 opciones.append({
                     "letra": match_opt.group(1).lower(),
-                    "texto": match_opt.group(2).strip()
+                    "texto": texto_opt,
                 })
                 leyendo_explicacion = False
                 continue
