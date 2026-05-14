@@ -4,17 +4,46 @@ Ejecutar: streamlit run app.py
 """
 
 import streamlit as st
+import streamlit.components.v1 as components
 import json
 import re
 import random
 import hashlib
 from datetime import datetime, timedelta
 from pathlib import Path
+from streamlit_js_eval import streamlit_js_eval
 
 # ─── Configuración ───
 RESULTADOS_DIR = Path("resultados")
 DATA_DIR = Path("data")
 RESULTADOS_DIR.mkdir(exist_ok=True)
+
+LS_KEY_HISTORIAL = "tudiapollito_historial"
+LS_KEY_VISTAS = "tudiapollito_vistas"
+
+
+def _escribir_localstorage(key, data):
+    js_data = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
+    components.html(
+        f"<script>localStorage.setItem('{key}', JSON.stringify({js_data}));</script>",
+        height=0,
+    )
+
+
+def inicializar_datos_navegador():
+    if "ls_loaded" in st.session_state:
+        return
+    data = streamlit_js_eval(
+        js_expressions="(function(){try{return{h:JSON.parse(localStorage.getItem('tudiapollito_historial')||'[]'),v:JSON.parse(localStorage.getItem('tudiapollito_vistas')||'[]')}}catch(e){return{h:[],v:[]}}})()",
+        key="ls_init",
+    )
+    if data is None:
+        with st.spinner("Cargando datos..."):
+            st.stop()
+    st.session_state.ls_loaded = True
+    st.session_state.historial_data = data.get("h", []) if isinstance(data, dict) else []
+    st.session_state.vistas_data = set(data.get("v", [])) if isinstance(data, dict) else set()
+
 
 st.set_page_config(page_title="TudiaPollito", page_icon="🐥", layout="centered")
 
@@ -284,14 +313,14 @@ def parsear_preguntas(texto: str, origen: str = "") -> list[dict]:
                 leyendo_explicacion = False
                 continue
 
-            match_expl = re.match(r"[Ee]xplicaci[oó]n:\s*(.*)", linea_strip)
+            match_expl = re.match(r">?\s*[Ee]xplicaci[oó]n:\s*(.*)", linea_strip)
             if match_expl:
                 explicacion = match_expl.group(1)
                 leyendo_explicacion = True
                 continue
 
             if leyendo_explicacion and linea_strip:
-                explicacion += " " + linea_strip
+                explicacion += " " + re.sub(r"^>\s*", "", linea_strip)
                 continue
 
             match_opt = re.match(r"[-*]?\s*([a-eA-E])\)\s*(.*)", linea_strip)
@@ -380,19 +409,27 @@ def id_pregunta(pregunta: dict) -> str:
 
 
 def guardar_resultado(resultado: dict):
+    if "historial_data" not in st.session_state:
+        st.session_state.historial_data = []
+    st.session_state.historial_data.append(resultado)
+    _escribir_localstorage(LS_KEY_HISTORIAL, st.session_state.historial_data)
+
     archivo = RESULTADOS_DIR / "historial.json"
     historial = []
     if archivo.exists():
-        historial = json.loads(archivo.read_text(encoding="utf-8"))
+        try:
+            historial = json.loads(archivo.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            pass
     historial.append(resultado)
-    archivo.write_text(json.dumps(historial, ensure_ascii=False, indent=2), encoding="utf-8")
+    try:
+        archivo.write_text(json.dumps(historial, ensure_ascii=False, indent=2), encoding="utf-8")
+    except OSError:
+        pass
 
 
 def cargar_historial() -> list[dict]:
-    archivo = RESULTADOS_DIR / "historial.json"
-    if archivo.exists():
-        return json.loads(archivo.read_text(encoding="utf-8"))
-    return []
+    return st.session_state.get("historial_data", [])
 
 
 def obtener_preguntas_falladas() -> set[str]:
@@ -402,6 +439,31 @@ def obtener_preguntas_falladas() -> set[str]:
         for f in h.get("falladas", []):
             falladas.add(f)
     return falladas
+
+
+def seleccionar_preguntas(pool: list[dict], num: int) -> list[dict]:
+    vistas = st.session_state.get("vistas_data", set())
+    no_vistas = [p for p in pool if id_pregunta(p) not in vistas]
+
+    if len(no_vistas) >= num:
+        seleccion = random.sample(no_vistas, num)
+    else:
+        seleccion = no_vistas[:]
+        ya_vistas = [p for p in pool if id_pregunta(p) in vistas]
+        faltan = num - len(seleccion)
+        if ya_vistas and faltan > 0:
+            seleccion.extend(random.sample(ya_vistas, min(faltan, len(ya_vistas))))
+        random.shuffle(seleccion)
+
+    return seleccion
+
+
+def marcar_preguntas_vistas(preguntas: list[dict]):
+    if "vistas_data" not in st.session_state:
+        st.session_state.vistas_data = set()
+    for p in preguntas:
+        st.session_state.vistas_data.add(id_pregunta(p))
+    _escribir_localstorage(LS_KEY_VISTAS, list(st.session_state.vistas_data))
 
 
 # ─── Generar explicación desde temario ───
@@ -612,6 +674,7 @@ def init_estado():
 
 
 init_estado()
+inicializar_datos_navegador()
 
 
 # ─── Estadísticas ───
@@ -658,11 +721,16 @@ def pagina_inicio():
     temario = cargar_temario()
     temas = listar_temas_disponibles()
 
-    col1, col2 = st.columns(2)
+    vistas = st.session_state.get("vistas_data", set())
+    no_vistas = len([p for p in preguntas_todas if id_pregunta(p) not in vistas])
+
+    col1, col2, col3 = st.columns(3)
     with col1:
-        st.metric("Preguntas disponibles", len(preguntas_todas))
+        st.metric("Preguntas totales", len(preguntas_todas))
     with col2:
-        st.metric("Temario cargado", "Sí" if temario else "No")
+        st.metric("Sin estrenar", no_vistas)
+    with col3:
+        st.metric("Temario", "Sí" if temario else "No")
 
     if not preguntas_todas:
         st.warning(
@@ -740,10 +808,14 @@ def pagina_inicio():
             "Minutos para completar:", min_value=5, max_value=60, value=15, step=5
         )
 
+    if no_vistas == 0 and not es_repaso:
+        st.info("🎉 ¡Ya has visto todas las preguntas! Se mezclarán de nuevo.")
+
     if st.button("▶️ Empezar", type="primary", use_container_width=True):
-        seleccion = random.sample(preguntas_filtradas, min(num, len(preguntas_filtradas)))
+        seleccion = seleccionar_preguntas(preguntas_filtradas, min(num, len(preguntas_filtradas)))
         if barajar:
             seleccion = [barajar_opciones(p) for p in seleccion]
+        marcar_preguntas_vistas(seleccion)
         st.session_state.preguntas = seleccion
         st.session_state.indice = 0
         st.session_state.respuestas = {}
@@ -773,6 +845,19 @@ def pagina_inicio():
 
         with tab_stats:
             mostrar_estadisticas(historial)
+
+    st.divider()
+    col_r1, col_r2 = st.columns(2)
+    with col_r1:
+        if st.button("🔄 Reiniciar preguntas vistas", use_container_width=True):
+            st.session_state.vistas_data = set()
+            _escribir_localstorage(LS_KEY_VISTAS, [])
+            st.rerun()
+    with col_r2:
+        if st.button("🗑️ Borrar historial", use_container_width=True):
+            st.session_state.historial_data = []
+            _escribir_localstorage(LS_KEY_HISTORIAL, [])
+            st.rerun()
 
 
 def finalizar_examen():
@@ -987,10 +1072,10 @@ def _mostrar_feedback(pregunta, indice):
         st.success("✅ ¡Correcto!")
     else:
         st.error("❌ Incorrecto")
-        temario = cargar_temario()
-        explicacion = buscar_explicacion_temario(pregunta, temario)
-        if explicacion:
-            st.info(explicacion)
+    temario = cargar_temario()
+    explicacion = buscar_explicacion_temario(pregunta, temario)
+    if explicacion:
+        st.info(explicacion)
 
 
 def pagina_resultados():
