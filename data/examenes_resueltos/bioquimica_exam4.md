@@ -1,7 +1,4 @@
-# Examen resuelto 4 — Bioquímica
-
-
-## Pregunta 1
+# Examen resuelto 4 — Bioquímica## Pregunta 1
 El metabolismo aerobio de un mol de______ puede rendir ______ moles de ATP:
 - a) a. AcetilCoA / 10.
 - b) b. Piruvato / 15.
@@ -118,18 +115,6 @@ Respuesta: a,c
 
 ## Pregunta 11
 Ruta de las pentosas fosforiladas:
-- a) a. En la actuación de la glucosa-6-fosfato deshidrogenasa se obtiene D-glucuronato-6- fosfato.
-- b) b. A partir de glucosa, con el carbono 6 marcado radiactivamente, se obtiene inmediatamente dióxido de carbono radiactivo.
-- c) c. A partir de glucosa, con el carbono 1 marcado radiactivamente, se producirá inmediatamente ribosa-5-fosfato marcada en el carbono 5.
-- d) d. Por cada vuelta del ciclo se «quema» totalmente una molécula de glucosa.
-- e) e. Para que se complete el ciclo ha de actuar la enzima 1,6-fructosa bifosfatasa.
-Respuesta: e
-> Explicación: Cuando la vía de las pentosas fosfato funciona como un ciclo completo (6 glucosa-6P → 6 ribosa-5P → 5 glucosa-6P + 6 CO₂), los azúcares fosfato generados en la fase no oxidativa necesitan ser reciclados de vuelta a glucosa-6-fosfato para reiniciar el ciclo. En este reciclaje, la transaldolasa y la transcetolasa producen fructosa-6-fosfato y gliceraldehído-3-fosfato, que se combinan (vía aldolasa) para formar fructosa-1,6-bisfosfato.
->
-> Para convertir la fructosa-1,6-bisfosfato de nuevo en fructosa-6-fosfato (y continuar hacia glucosa-6-fosfato), se necesita la fructosa-1,6-bisfosfatasa, una enzima que elimina un grupo fosfato. Sin esta enzima, el ciclo no puede completarse porque la fructosa-1,6-bisfosfato no puede reconvertirse en fructosa-6-fosfato mediante la PFK-1, ya que esa reacción es irreversible **(e correcta)**.
-
-## Pregunta 12
-Ruta de las pentosas fosforiladas:
 - a) a. La glucosa-6-fosfato puede convertirse en ribosa-5-fosfato sin ninguna descarboxilación.
 - b) b. Por cada glucosa-6-fosfato convertida totalmente hasta dióxido de carbono se producen 24 equivalentes de reducción (H).
 - c) c. A partir de 5 moles de glucosa-6-fosfato se pueden obtener 6 moles de ribosa-5- fosfato.
@@ -144,14 +129,14 @@ Respuesta: e
 >
 > En la fase no oxidativa, 6 moléculas de ribosa-5-fosfato (5C) se pueden reorganizar en 5 moléculas de hexosa fosfato (6C): 6 × 5C = 30C = 5 × 6C. En sentido inverso, 5 glucosa-6-fosfato pueden generar 6 ribosa-5-fosfato **(c correcta)**.
 
-## Pregunta 13
+## Pregunta 12
 Ciclo del glucuronato:
 - a) En el hombre su importancia principal radica en su capacidad de producir ácido L- ascórbico a partir de L-gulonato.
 - b) En todas las etapas redox del mismo se utilizan NAD+/ NADH como coenzimas.
 - c) La primera etapa, desde la glucosa consiste en una oxidación.
 - d) Por cada vuelta se oxida totalmente una glucosa.
 
-## Pregunta 14
+## Pregunta 13
 Consumo diario cerebral de glucosa:
 - a) a. Es de unos 10 gramos.
 - b) b. Para llevarlo a cabo se realiza una intensa gluconeogénesis en el cerebro.
@@ -163,7 +148,7 @@ Respuesta: e
 >
 > Uno de estos sustratos es el glicerol, que se libera del tejido adiposo como resultado de la lipólisis (hidrólisis de los triacilgliceroles). Cuando las grasas almacenadas se movilizan, se liberan ácidos grasos y glicerol. Mientras que los ácidos grasos no pueden convertirse en glucosa en mamíferos (el acetil-CoA no es sustrato gluconeogénico), el glicerol sí puede: se fosforila a glicerol-3-fosfato por la glicerol quinasa, se oxida a DHAP por la glicerol-3-fosfato deshidrogenasa, y entra en la gluconeogénesis para producir glucosa **(e correcta)**.
 
-## Pregunta 15
+## Pregunta 14
 Se considera como gluconeogénesis la obtención de:
 - a) a. Glucosa a partir de glucógeno
 - b) b. Glucógeno a partir de lactosa.
@@ -175,7 +160,7 @@ Respuesta: c
 >
 > La obtención de glucosa a partir de glucógeno se denomina glucogenólisis (no gluconeogénesis), ya que se parte de un polímero de glucosa, no de un precursor no glucídico **(c correcta)**.
 
-## Pregunta 16
+## Pregunta 15
 Son metabolitos con capacidad gluconeogénica:
 - a) Fructosa-6-fosfato.
 - b) Citrato.
@@ -188,7 +173,7 @@ Respuesta: b,c
 >
 > La fructosa-6-fosfato ya es un intermediario de la propia glucólisis/gluconeogénesis, no un precursor externo. El butirato es un ácido graso de cadena corta que se degrada a acetil-CoA, y el acetil-CoA no es sustrato gluconeogénico en mamíferos.
 
-## Pregunta 17
+## Pregunta 16
 No es un metabolito gluconeogénico:
 - a) Aspartato
 - b) Fumarato
@@ -200,7 +185,7 @@ Respuesta: e
 >
 > En cambio, aspartato (se transamina a oxalacetato), fumarato (intermediario del ciclo de Krebs, se convierte en oxalacetato), oxalacetato (sustrato directo de la PEPCK) y alanina (se transamina a piruvato) son todos gluconeogénicos **(e correcta)**.
 
-## Pregunta 18
+## Pregunta 17
 La conversión gluconeogénica del piruvato en glucosa requiere la participación de las enzimas:
 - a) Piruvato carboxilasa, mitocondrial.
 - b) Piruvato quinasa, citosólica.
@@ -213,7 +198,7 @@ Respuesta: a,c
 >
 > Luego, el oxalacetato se convierte en fosfoenolpiruvato por la fosfoenolpiruvato carboxiquinasa (PEPCK), localizada en el citosol (y parcialmente en la mitocondria según la especie). Esta reacción utiliza GTP como fuente de energía y libera CO₂. A partir del PEP, la gluconeogénesis continúa por las reacciones reversibles compartidas con la glucólisis **(c correcta)**.
 
-## Pregunta 19
+## Pregunta 18
 Cuando metabólicamente se está transformando glutamato en glucosa no se requiere la participación de:
 - a) a. Succinato deshidrogenasa.
 - b) b. Citrato sintasa.
@@ -225,7 +210,7 @@ Respuesta: b
 >
 > El oxalacetato sale del ciclo y entra en la gluconeogénesis (PEPCK → PEP → ... → fructosa-1,6-bisfosfato → [aldolasa en sentido inverso] → ... → glucosa-6-fosfato → [glucosa-6-fosfatasa] → glucosa). En ningún momento de esta ruta se necesita la citrato sintasa, ya que el flujo va desde α-cetoglutarato hacia oxalacetato (sentido del ciclo), y no necesita volver a condensar con acetil-CoA para formar citrato **(b correcta)**.
 
-## Pregunta 20
+## Pregunta 19
 La piruvato carboxilasa es una enzima:
 - a) En cuya actividad participa avidina.
 - b) Que se acopla a la hidrólisis de 1 ATP en la carboxilación del piruvato hasta oxalacetato.
@@ -238,7 +223,7 @@ Respuesta: a,b,c
 >
 > La piruvato carboxilasa está presente fundamentalmente en el hígado y el riñón, los dos órganos principales donde tiene lugar la gluconeogénesis. En estos tejidos, la enzima proporciona oxalacetato tanto para la gluconeogénesis como para reponer los intermediarios del ciclo de Krebs (función anaplerótica) **(c correcta)**.
 
-## Pregunta 21
+## Pregunta 20
 Fosfoenolpiruvato carboxiquinasa:
 - a) a. También se denomina oxalacetato quinasa.
 - b) b. Esencialmente es intramitocondrial.
@@ -250,7 +235,7 @@ Respuesta: a
 >
 > Su producto es el fosfoenolpiruvato (no el piruvato), y utiliza GTP (no UTP) como fuente de energía. En humanos, la PEPCK se distribuye entre el citosol y la mitocondria. Esta enzima es clave en la gluconeogénesis y su expresión está fuertemente regulada a nivel transcripcional por el glucagón (inductor) y la insulina (represor) **(a correcta)**.
 
-## Pregunta 22
+## Pregunta 21
 La gluconeogénesis:
 - a) a. A partir de piruvato  tendería  a acoplarse al funcionamiento de la malato deshidrogenasa mitocondrial y citosólica.
 - b) b. A partir de lactato favorecería el uso de los sistemas aminotransferasa mitocondrial y citoplásmica.
@@ -266,7 +251,7 @@ Respuesta: e
 >
 > El músculo carece de glucosa-6-fosfatasa, por lo que no puede completar la gluconeogénesis liberando glucosa libre **(d correcta)**.
 
-## Pregunta 23
+## Pregunta 22
 Ciclo de Cori:
 - a) Relaciona la salida muscular de lactato con la salida hepática de glucosa.
 - b) Requiere para su funcionamiento que en el hepatocito se catabolice aeróbicamente la mayor parte del lactato que le llega desde el músculo.
@@ -277,7 +262,7 @@ Respuesta: a,c
 >
 > Aunque la gluconeogénesis hepática consume 6 ATP por glucosa sintetizada, el hígado obtiene esta energía de la oxidación aeróbica de ácidos grasos y otros combustibles. El rendimiento global del sistema (cuando se considera que parte del lactato se oxida aeróbicamente en el hígado para proporcionar la energía necesaria) supera los 10 ATP por molécula de glucosa procesada en el circuito completo **(c correcta)**.
 
-## Pregunta 24
+## Pregunta 23
 Lugares de regulación glicolítica/gluconeogénica:
 - a) a. Ciclo hexoquinasa/glucosa-6-fosfatasa.
 - b) b. Piruvato quinasa, pero no piruvato carboxilasa.
@@ -289,7 +274,7 @@ Respuesta: e
 >
 > Los tres principales puntos de regulación son: (1) el par hexoquinasa/glucosa-6-fosfatasa, que controla la entrada/salida de glucosa; (2) el par PFK-1/fructosa-1,6-bisfosfatasa, que es el punto de regulación principal; y (3) el par piruvato quinasa / piruvato carboxilasa + PEPCK, que controla la interconversión PEP-piruvato. La fosfofructoquinasa-1 es el punto de regulación más importante de la glucólisis. Todos estos pares enzimáticos constituyen puntos de regulación, por lo que todas las opciones son correctas **(e correcta)**.
 
-## Pregunta 25
+## Pregunta 24
 Se conocen mecanismos reguladores glicolíticos/gluconeogénicos diversos que pueden comportar la participación de:
 - a) Isoenzimas con distintas propiedades cinéticas.
 - b) Efectores alostéricos retroinhibidores o de tipo de señal energética.
@@ -298,7 +283,7 @@ Se conocen mecanismos reguladores glicolíticos/gluconeogénicos diversos que pu
 Respuesta: a,b,c,d
 > Explicación: La regulación metabólica de la glucólisis y gluconeogénesis emplea todos los niveles de control biológico conocidos. Las isoenzimas (como hexoquinasa vs glucoquinasa) permiten respuestas adaptadas a cada tejido **(a correcta)**. Los efectores alostéricos (ATP, AMP, citrato, F-2,6-BP) proporcionan regulación inmediata según el estado energético **(b correcta)**. Las cascadas hormonales de fosforilación/desfosforilación (insulina, glucagón, adrenalina → PKA → fosforilación de PFK-2/FBPasa-2, piruvato quinasa, etc.) ofrecen regulación rápida a mediano plazo **(c correcta)**. La inducción/represión génica (insulina induce glucoquinasa; glucagón/cortisol inducen PEPCK y G6Pasa) permite adaptación a largo plazo **(d correcta)**.
 
-## Pregunta 26
+## Pregunta 25
 Hexoquinasas y regulación. Respecto a glucoquinasa o hexoquinasa IV, es INCIERTO que:
 - a) a. Se inhiba por la glucosa-6-fosfato.
 - b) b. Su KM para la glucosa sea mayor que el del resto de las hexoquinasas.
@@ -310,7 +295,7 @@ Respuesta: a
 >
 > En cambio, sí es cierto que tiene un KM alto para la glucosa (~10 mM, frente a ~0,1 mM de las otras hexoquinasas), que es inducible por insulina (regulación transcripcional), que es esencialmente hepática (también se encuentra en células β pancreáticas) y que cataliza la misma reacción: glucosa + ATP → glucosa-6-fosfato + ADP. Lo INCIERTO es que se inhiba por G6P **(a correcta)**.
 
-## Pregunta 27
+## Pregunta 26
 Fosfofructoquinasa-1(PFK-1), fructosa-1,6-bisfosfatasa(1,6-FBPasa) y su regulación a través de efectores:
 - a) a. La PFK-1 es inhibida alostéricamente por AMP.
 - b) b. La PFK-1 es activada alostéricamente por protones.
@@ -320,7 +305,7 @@ Fosfofructoquinasa-1(PFK-1), fructosa-1,6-bisfosfatasa(1,6-FBPasa) y su regulaci
 Respuesta: c
 > Explicación: La fructosa-1,6-bisfosfatasa (FBPasa-1) es la enzima gluconeogénica que cataliza la reacción opuesta a la PFK-1. El citrato es un activador de la FBPasa-1 y, simultáneamente, un inhibidor de la PFK-1. Esto tiene sentido metabólico: cuando el citrato se acumula en el citoplasma (señal de que el ciclo de Krebs está saturado y hay abundancia energética), se inhibe la glucólisis y se favorece la gluconeogénesis. El citrato actúa así como una señal de que no es necesario degradar más glucosa, y es preferible sintetizarla o almacenarla **(c correcta)**.
 
-## Pregunta 28
+## Pregunta 27
 1,6-Fosfofructoquinasa y ATP:
 - a) El ATP es sustrato de la enzima.
 - b) El ATP es inhibidor de la enzima.
@@ -333,7 +318,7 @@ Respuesta: a,b,c
 >
 > El sitio catalítico tiene mayor afinidad por el ATP que el sitio regulador inhibidor. Esto asegura que a concentraciones bajas-moderadas de ATP, la enzima funciona normalmente (el ATP ocupa el sitio catalítico); solo cuando el ATP es abundante (concentraciones altas), se satura también el sitio inhibidor y la enzima se frena **(c correcta)**.
 
-## Pregunta 29
+## Pregunta 28
 Regulaciones de la piruvato quinasa (PK), piruvato carboxilasa (PC) y piruvato deshidrogenasa(PDH) a través del acetil CoA .El acetil CoA:
 - a) a. Inhibe la PK.
 - b) b. Inhibe la PC.
@@ -347,7 +332,7 @@ Respuesta: a
 >
 > Respecto a la piruvato carboxilasa, el acetil-CoA es en realidad un activador alostérico esencial (no un inhibidor). La PC requiere acetil-CoA para adoptar su conformación activa, lo que asegura que solo se sintetice oxalacetato (para gluconeogénesis o para reponer el ciclo de Krebs) cuando hay acetil-CoA disponible. Y respecto a la PDH, el acetil-CoA es un inhibidor (no un activador), actuando como inhibidor por producto.
 
-## Pregunta 30
+## Pregunta 29
 Regulaciones de piruvato quinasa (PK), piruvato carboxilasa (PC) y piruvato deshidrogenasa(PDH):
 - a) El ATP inhibe a la PK
 - b) La fosforilación activa la PDH.

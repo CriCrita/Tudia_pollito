@@ -1,7 +1,4 @@
-# Examen resuelto 3 — Bioquímica
-
-
-## Pregunta 1
+# Examen resuelto 3 — Bioquímica## Pregunta 1
 Regulación hormonal de la glucolisis/gluconeogénesis:
 - a) Una glucemia baja estimula la secreción pancreática de glucagón.
 - b) Altos niveles de glucagón favorecen la glucolisis y dificultan la gluconeogénesis.
@@ -77,25 +74,13 @@ Respuesta: a,c
 > La ácido graso sintasa (FAS) de mamíferos es un complejo multienzimático que sintetiza palmitato (ácido graso saturado de 16 carbonos) a partir de acetil-CoA y sucesivas unidades de malonil-CoA. Cada ciclo de elongación añade 2 carbonos y consume 2 NADPH. Para sintetizar palmitato (16C) se necesitan 1 acetil-CoA + 7 malonil-CoA, y se utilizan 14 NADPH en total (7 ciclos × 2 NADPH por ciclo) **(c correcta)**.
 
 ## Pregunta 9
-La insulina se une a un receptor que:
-- a) Esta acoplado a una proteína G.
-- b) Posee actividad tirosina quinasa.
-- c) Posee actividad ser/thr fosfatasa.
-- d) Migra al núcleo para afectar a la transcripción.
-- e) Activa directamente MAP quinasa.
-Respuesta: b
-> Explicación: El receptor de insulina es un receptor con actividad tirosina quinasa intrínseca, formado por dos subunidades α extracelulares (que unen la insulina) y dos subunidades β transmembrana (que contienen el dominio catalítico). Cuando la insulina se une a las subunidades α, induce un cambio conformacional que activa la actividad tirosina quinasa de las subunidades β.
->
-> Las subunidades β se autofosforilan en residuos de tirosina y, a continuación, fosforilan proteínas sustrato intracelulares (como IRS-1 e IRS-2) también en tirosinas. Estas fosforilaciones inician cascadas de señalización (PI3K/Akt y Ras/MAPK) que median los efectos metabólicos de la insulina: captación de glucosa, síntesis de glucógeno, lipogénesis y síntesis proteica **(b correcta)**.
-
-## Pregunta 10
 Sistema fosfatidilinositol:
 - a) Los receptores hormonales en este sistema suelen ser receptores tirosina quinasa (RTK).
 - b) Se produce el IP3 mediante la acción de la Adenilato ciclasa.
 - c) El IP3 impide la liberación de Ca2+ desde el reticulo endoplasmático.
 - d) La proteína quinasa Ca-calmodulina dependiente se activa cuando se separa la proteína Ca-calmodulina de la quinasa.
 
-## Pregunta 11
+## Pregunta 10
 En la síntesis de ácidos grasos a partir de malonil-CoA interviene la ácido graso sintasa. Para la enzima de mamíferos es cierto que:
 - a) El producto final es un ácido graso saturado de 16 carbonos.
 - b) La cadena polipeptídica del monómero posee más de un centro activo.
@@ -108,18 +93,7 @@ Respuesta: a,b,c
 >
 > Durante todo el proceso de síntesis, los intermediarios de la cadena en crecimiento permanecen covalentemente unidos como tioésteres al grupo fosfopanteteína del dominio ACP o al residuo de cisteína del dominio condensante. Esta unión covalente evita la liberación prematura de intermediarios y asegura la eficiencia del proceso. Solo cuando la cadena alcanza 16 carbonos, la tioesterasa hidroliza el enlace tioéster y libera el palmitato **(c correcta)**.
 
-## Pregunta 12
-Un nivel elevado de insulina en la sangre:
-- a) Estimula la síntesis de ácidos grasos y triacilgliceroles en el hígado.
-- b) Estimula la degradación de glucógeno en el hígado.
-- c) Estimula la síntesis de glucógeno en el hígado y en el músculo.
-- d) Inhibe la entrada de glucosa en el hígado.
-Respuesta: a,c
-> Explicación: La insulina es la hormona del estado alimentado, y sus efectos están orientados al almacenamiento de nutrientes. En el hígado, la insulina promueve la lipogénesis activando la acetil-CoA carboxilasa (mediante desfosforilación) e induciendo la expresión de la ácido graso sintasa. Los ácidos grasos sintetizados se esterifican con glicerol para formar triacilgliceroles, que se empaquetan en lipoproteínas VLDL para su distribución a otros tejidos **(a correcta)**.
->
-> En cuanto al metabolismo del glucógeno, la insulina favorece su síntesis tanto en el hígado como en el músculo. Lo consigue activando la proteína fosfatasa 1 (PP1), que desfosforila y activa la glucógeno sintasa, a la vez que desfosforila e inactiva la glucógeno fosforilasa y la fosforilasa quinasa. El resultado es un desplazamiento del equilibrio hacia la síntesis y almacenamiento de glucógeno a partir de la glucosa disponible **(c correcta)**.
-
-## Pregunta 13
+## Pregunta 11
 ¿Cuáles de las siguientes relaciones son ciertas respecto a lostransportadoresdelacadena detransporteelectrónicomitocondrial?
 - a) Complejo I - Contiene centros ferro-sulfurados.
 - b) Complejo II – Bombea protones hacia el espacio intermembrana.
@@ -130,7 +104,7 @@ Respuesta: a,c
 >
 > El complejo III (citocromo bc₁ o ubiquinol:citocromo c oxidorreductasa) recibe los electrones del ubiquinol (QH₂, la forma reducida de la coenzima Q) y los transfiere al citocromo c, una proteína soluble del espacio intermembrana. Este proceso ocurre mediante el denominado ciclo Q, un mecanismo elegante que permite la transferencia de electrones de uno en uno (al citocromo c) a partir de un donador de dos electrones (QH₂), bombeando simultáneamente protones al espacio intermembrana **(c correcta)**.
 
-## Pregunta 14
+## Pregunta 12
 Los siguientes procesos metabólicos pueden tener lugar en el hepatocito:
 - a) Ruta de las pentosas fosforiladas.
 - b) Glucogenosíntesis.
@@ -145,7 +119,7 @@ Respuesta: a,b,c,d
 >
 > La gluconeogénesis es especialmente activa en el hígado, que es el principal órgano responsable de mantener la glucemia durante el ayuno mediante la síntesis de glucosa a partir de lactato, aminoácidos y glicerol **(d correcta)**.
 
-## Pregunta 15
+## Pregunta 13
 En las células eucariotas la glicólisis anaerobia tiene lugar:
 - a) a. En el núcleo.
 - b) b. La membrana externa mitocondrial.
@@ -155,7 +129,7 @@ En las células eucariotas la glicólisis anaerobia tiene lugar:
 Respuesta: c
 > Explicación: La glucólisis es una ruta metabólica que se desarrolla íntegramente en el citoplasma (citosol) de la célula. Todas las enzimas glucolíticas son solubles y se encuentran libres en el citosol, desde la hexoquinasa (que cataliza el primer paso) hasta la piruvato quinasa (que cataliza el último). Esta localización citoplásmica es coherente con el hecho de que la glucólisis no requiere oxígeno y es una de las rutas metabólicas más antiguas evolutivamente, ya que surgió antes de la aparición de las mitocondrias. Incluso las células que carecen de mitocondrias (como los eritrocitos) pueden realizar la glucólisis **(c correcta)**.
 
-## Pregunta 16
+## Pregunta 14
 Enzimas glicolíticas anaerobias. Aldolasa (A), 3-fosfoglicerato quinasa (P), triosafosfatoisomerasa (I) y triosafosfato deshidrogenasa (D). En el sentido glicolítico, su orden naturaldeactuaciónserá:
 - a) a. A, I, D y P.
 - b) b. A, P, D e I.
@@ -167,7 +141,7 @@ Respuesta: a
 >
 > Después, la triosafosfato deshidrogenasa (D), también llamada gliceraldehído-3-fosfato deshidrogenasa, oxida el G3P y lo fosforila con fosfato inorgánico para dar 1,3-bisfosfoglicerato. Finalmente, la 3-fosfoglicerato quinasa (P) transfiere el grupo fosfato de alta energía del 1,3-bisfosfoglicerato al ADP, produciendo ATP y 3-fosfoglicerato. El orden correcto es por tanto: A → I → D → P **(a correcta)**.
 
-## Pregunta 17
+## Pregunta 15
 Una de las siguientes enzimas no se debe considerar una enzima funcional en la glicólisis anaerobia desde glucosa a piruvato:
 - a) Glucoquinasa.
 - b) Hexosafosfato isomerasa
@@ -179,7 +153,7 @@ Respuesta: a
 >
 > Además, la glucoquinasa tiene propiedades cinéticas distintas: baja afinidad por la glucosa (Km alto, ~10 mM), no se inhibe por glucosa-6-fosfato y funciona como sensor de glucosa en el hígado. Las demás enzimas listadas (hexosafosfato isomerasa, enolasa, piruvato quinasa y triosafosfato isomerasa) son todas enzimas constitutivas de la glucólisis **(a correcta)**.
 
-## Pregunta 18
+## Pregunta 16
 Glicólisis anaerobia hasta lactato. Orden correcto glicolítico de los productos intermedios señalados:
 - a) GA3P; 1,3-BPG; PEP.
 - b) 3-PG; DHAP; 1,3-BPG.
@@ -190,7 +164,7 @@ Respuesta: a,c
 >
 > La opción a presenta GA3P → 1,3-BPG → PEP, que sigue el orden correcto de la ruta (aunque hay intermediarios entre 1,3-BPG y PEP) **(a correcta)**. La opción c presenta G6P → PEP → PIR, que también sigue el orden correcto de la glucólisis, desde el inicio hasta el final **(c correcta)**.
 
-## Pregunta 19
+## Pregunta 17
 Enzimas glicolíticas:
 - a) a. La glucoquinasa cataliza la misma reacción que la hexoquinasa pero en sentido contrario.
 - b) b. En el paso catalizado por la triosafosfato deshidrogenasa tiene lugar una fosforilación a nivel de sustrato.
@@ -202,7 +176,7 @@ Respuesta: c
 >
 > Esta reacción es esencial porque solo el G3P puede continuar siendo metabolizado por las enzimas de la fase de beneficios de la glucólisis. Gracias a la triosafosfato isomerasa, las dos triosas fosfato generadas por la aldolasa acaban ambas como G3P, duplicando el rendimiento de la ruta **(c correcta)**.
 
-## Pregunta 20
+## Pregunta 18
 Generalidades sobre la glicólisis anaerobia:
 - a) Para su ejecución se requiere la presencia de fosfato.
 - b) Todas las etapas catalizadas por quinasas son irreversibles.
@@ -213,7 +187,7 @@ Respuesta: a,c
 >
 > Si la glucólisis termina en piruvato (sin que este se convierta en lactato ni entre en la mitocondria), el NADH producido en la reacción de la gliceraldehído-3-fosfato deshidrogenasa no tiene forma de reoxidarse a NAD⁺. Como resultado, el NADH se acumula y el NAD⁺ se agota, lo que eventualmente detendría la propia glucólisis. Por eso es necesario que el piruvato se reduzca a lactato (regenerando NAD⁺) en condiciones anaeróbicas, o que el NADH transfiera sus electrones a la cadena respiratoria en condiciones aeróbicas **(c correcta)**.
 
-## Pregunta 21
+## Pregunta 19
 Glicólisis anaerobia:
 - a) a. No tiene lugar en las células musculares blancas.
 - b) b. Desde la glucosa hasta el piruvato son seis enzimas diferentes las que participan.
@@ -225,7 +199,7 @@ Respuesta: c
 >
 > Es solo a partir de la fase de beneficios (desde GA3P hasta piruvato) cuando se genera ATP, concretamente 4 moléculas de ATP por cada glucosa (2 en la 3-fosfoglicerato quinasa y 2 en la piruvato quinasa). Por tanto, hasta la fase de lisis incluida, no hay producción neta de ATP **(c correcta)**.
 
-## Pregunta 22
+## Pregunta 20
 La deshidratación del 2-fosfoglicerato hasta el fosfoenolpiruvato:
 - a) a. Necesita ATP.
 - b) b. Está catalizada por la fosfoglucomutasa.
@@ -237,7 +211,7 @@ Respuesta: d
 >
 > El PEP tiene la mayor energía libre de hidrólisis de cualquier compuesto fosforilado biológico (ΔG'° ≈ -61,9 kJ/mol), muy superior a la del ATP (ΔG'° ≈ -30,5 kJ/mol). Esto permite que en la siguiente reacción, la piruvato quinasa transfiera el grupo fosfato del PEP al ADP para formar ATP mediante fosforilación a nivel de sustrato **(d correcta)**.
 
-## Pregunta 23
+## Pregunta 21
 En condiciones anaerobias la célula es capaz de producir por cadamol de glucosa transformado en lactato los siguientes moles de ATP:
 - a) 1
 - b) 2
@@ -249,7 +223,7 @@ Respuesta: b
 >
 > El NADH generado en la gliceraldehído-3-fosfato deshidrogenasa se consume en la reducción del piruvato a lactato por la lactato deshidrogenasa, por lo que no aporta ATP adicional. Los 37-38 ATP de la opción e corresponderían a la oxidación completa aeróbica de la glucosa (incluyendo ciclo de Krebs y fosforilación oxidativa) **(b correcta)**.
 
-## Pregunta 24
+## Pregunta 22
 Glicólisis y ácido láctico:
 - a) a. Su producción muscular se debe a la actuación de bacterias lácticas específicas.
 - b) b. La lactato deshidrogenasa de tipo M favorece la conversión del piruvato en lactato.
@@ -261,7 +235,7 @@ Respuesta: b
 >
 > Esto tiene sentido fisiológico: el músculo esquelético, especialmente las fibras blancas de contracción rápida, necesita regenerar NAD⁺ rápidamente durante el ejercicio anaeróbico intenso. La isoforma M de la LDH está optimizada para esta función, convirtiendo eficientemente el piruvato en lactato y permitiendo que la glucólisis continúe a máxima velocidad **(b correcta)**.
 
-## Pregunta 25
+## Pregunta 23
 Lactato deshidrogenasa:
 - a) La participación de la lactato deshidrogenasa en la célula muscular es importante en los esfuerzos de gran duración, pero no en los intensos de corta duración.
 - b) Su actuación ayuda a mantener constante la relación NAD+/NADH citoplásmica.
@@ -274,14 +248,14 @@ Respuesta: a,b,c
 >
 > Las cinco isoformas de la LDH (LDH-1 a LDH-5, combinaciones de subunidades H y M) se distribuyen de forma característica en los tejidos. Cuando un tejido sufre daño, libera su patrón isoenzimático específico al plasma. El análisis electroforético de las isoformas de LDH en suero permite identificar el tejido dañado: un aumento de LDH-1 (H₄) sugiere daño cardíaco, mientras que un aumento de LDH-5 (M₄) sugiere daño hepático o muscular esquelético **(c correcta)**.
 
-## Pregunta 26
+## Pregunta 24
 Catabolismo de la fructosa:
 - a) La fructosuria esencial ocasiona la acumulación de fructosa-1-fosfato.
 - b) Se inicia en el hígado mediante su conversión hasta fructosa-6-fosfato.
 - c) En el músculo comienza transformándose en galactosa-6-fosfato.
 - d) La fructosa directamente se fosforila mediante una quinasa hasta 1,6-fructosa bifosfato.
 
-## Pregunta 27
+## Pregunta 25
 Metabolismo de la fructosa:
 - a) a. El rendimiento del metabolismo anaerobio de la fructosa es análogo al de la glucosa.
 - b) b. La carencia de la fructoquinasa hepática específica se denomina intolerancia hereditaria a la fructosa.
@@ -293,7 +267,7 @@ Respuesta: a
 >
 > Aunque la vía de entrada es diferente (fructoquinasa + aldolasa B vs hexoquinasa + PFK-1 + aldolasa A), ambas hexosas convergen en las mismas triosas fosfato y generan la misma cantidad de ATP en la fase de beneficios de la glucólisis **(a correcta)**.
 
-## Pregunta 28
+## Pregunta 26
 Metabolismo HEPATICO de la fructosa:
 - a) a. La fructoquinasa produce cantidades equimoleculares de F1P y de F6P.
 - b) b. En el hígado existe una sola isoenzima de la aldolasa.
@@ -305,14 +279,14 @@ Respuesta: c
 >
 > Este proceso gluconeogénico consume energía en forma de ATP y GTP, ya que la gluconeogénesis es endergónica. Además, la propia fosforilación inicial de la fructosa por la fructoquinasa consume un ATP. Por tanto, convertir fructosa en glucosa implica un gasto energético neto **(c correcta)**.
 
-## Pregunta 29
+## Pregunta 27
 Metabolismo de la galactosa:
 - a) La galactoquinasa transforma la galactosa en galactosa-6-fosfato.
 - b) En la galactosemia congénita existe un problema relacionado con la UDPGal pirofosforilasa.
 - c) La galactosa-1-fosfato se transforma en glucosa-1-fosfato mediante una epimerasa.
 - d) La galactosemia congénita se trata con la administración de lactosa.
 
-## Pregunta 30
+## Pregunta 28
 A un alumno se le suministra un extracto muscular dializado contra el amortiguador fosfato al que se añade una disolución con glucosa y ATP-Mg+2 . Para obtener galactosa-1-fosfato habría que añadir:
 - a) Nada
 - b) UTP

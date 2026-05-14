@@ -1,7 +1,4 @@
-# Campus Tema 4 Enzimas
-
-
-## Pregunta 1
+# Campus Tema 4 Enzimas## Pregunta 1
 La energía de activación:
 - a) es la que se desprende en el transcurso de una reacción
 - b) aumenta por la acción de los catalizadores
@@ -119,15 +116,6 @@ Respuesta: c
 > Explicación: En la regulación por retroalimentación (feedback), el producto final de una ruta metabólica inhibe la enzima que cataliza la primera etapa comprometida, evitando la acumulación innecesaria de intermediarios **(c correcta)**. Los intermediarios no suelen ser efectores positivos de la primera enzima (a falsa). La inhibición por retroalimentación es ejercida típicamente por el producto final, no por el primer producto (b falsa). El producto final inhibe, no activa, la primera enzima (d falsa).
 
 ## Pregunta 14
-Enzimas alostéricas:
-- a) la regulación alostérica implica una modificación covalente de la enzima
-- b) siguen la cinética de Michaelis-Menten
-- c) normalmente están compuestas por más de una cadena polipeptídica
-- d) normalmente tienen más de un centro activo
-Respuesta: c
-> Explicación: Las enzimas alostéricas son típicamente oligoméricas, formadas por varias subunidades (cadenas polipeptídicas), lo que permite la cooperatividad y la regulación **(c correcta)**. La regulación alostérica es no covalente, se basa en la unión reversible de efectores (a falsa). No siguen la cinética de Michaelis-Menten, sino que presentan una curva sigmoidal de v frente a [S] (b falsa). Tener varias subunidades no implica necesariamente tener más de un centro activo funcional distinto (d falsa).
-
-## Pregunta 15
 Los cofactores:
 - a) Mejoran la actividad de ciertas enzimas pero no son imprescindibles para que sean activas
 - b) pueden llegar a participar en el mecanismo de la reacción

@@ -1,7 +1,4 @@
-# Examen resuelto 6 — Bioquímica
-
-
-## Pregunta 1
+# Examen resuelto 6 — Bioquímica## Pregunta 1
 Señala la proposición incorrecta sobre la riboflavina:
 - a) Se encuentra en productos lácteos
 - b) También se la conoce como vitamina B1
@@ -88,16 +85,6 @@ Regulación hormonal de la glucólisis/gluconeogénesis:
 - e) La insulina estimula la gluconeogénesis
 
 ## Pregunta 11
-Capacidades metabólicas de los órganos:
-- a) Tras un ayuno prolongado, el cerebro es capaz de obtener más del 25% de la energía que necesita a partir de los cuerpos cetónicos
-- b) El tejido adiposo es el principal responsable de la síntesis de los cuerpos cetónicos circulantes
-- c) Los cuerpos cetónicos son un combustible metabólico habitual para el miocardio
-- d) Debido a su dependencia de glucosa como fuente de energía la gluconeogénesis es un proceso muy activo el cerebro
-Respuesta: a,c
-
-> Explicación: La opción a es correcta: tras un ayuno prolongado (varios días), el cerebro se adapta metabólicamente y puede obtener hasta el 60-70% de sus necesidades energéticas a partir de cuerpos cetónicos (acetoacetato y β-hidroxibutirato), reduciendo significativamente su dependencia de glucosa. La opción c es correcta: el corazón (miocardio) es un órgano que utiliza preferentemente ácidos grasos y cuerpos cetónicos como combustible de forma habitual, incluso en condiciones normales, debido a su alta capacidad oxidativa mitocondrial. La opción b es falsa porque los cuerpos cetónicos se sintetizan en el hígado (hepatocitos), no en el tejido adiposo. La opción d es falsa porque la gluconeogénesis es activa en hígado y riñón, no en el cerebro.
-
-## Pregunta 12
 Integración del metabolismo de grasas e hidratos de carbono:
 - a) Los triglicéridos del tejido adiposo no aportan ningún precursor gluconeogénico en condiciones de ayuno, pero su movilización limita el consumo de glucosa por otros tejidos
 - b) En el ayuno, la elevación de los niveles séricos de los cuerpos cetónicos inhibe el consumo de glucosa por los tejidos periféricos
@@ -107,14 +94,14 @@ Respuesta: b,d
 
 > Explicación: La opción b es correcta: durante el ayuno, los cuerpos cetónicos producidos por el hígado alcanzan niveles elevados en sangre y son captados por tejidos periféricos (músculo, cerebro), lo que reduce el consumo de glucosa por estos tejidos, preservándola para las necesidades del sistema nervioso central. La opción d es correcta: el acetil-CoA inhibe la piruvato deshidrogenasa (PDH) tanto directamente (como producto de la reacción) como indirectamente (activando la PDH quinasa que fosforila e inactiva la PDH), lo que desvía el piruvato hacia la gluconeogénesis. La opción a es incorrecta porque el glicerol liberado de la hidrólisis de triglicéridos sí es un precursor gluconeogénico. La opción c es incorrecta porque los animales no pueden convertir acetil-CoA en piruvato ni en glucosa neta (no existe la reacción inversa de la piruvato deshidrogenasa).
 
-## Pregunta 13
+## Pregunta 12
 La diabetes tipo II puede aparecer por:
 - a) Acumulación de proteínas en el músculo
 - b) Principios activos de fármacos que pueden interferir en las vías de transducción de la insulina implicadas en la aparición de GLUT4 en la membrana
 - c) Ocurre por un fallo genético y no produce insulina
 - d) Acumulación grasa en el músculo
 
-## Pregunta 14
+## Pregunta 13
 En relación al ácido úrico:
 - a) Se relaciona con la degradación de bases pirimidinicas
 - b) Se relaciona con la síntesis de bases púricas
@@ -125,18 +112,7 @@ Respuesta: d
 
 > Explicación: El tratamiento de la hiperuricemia (gota) se basa en el uso de alopurinol, un inhibidor de la xantina oxidasa, la enzima que cataliza los dos últimos pasos de la degradación de purinas: la conversión de hipoxantina a xantina y de xantina a ácido úrico. Al inhibir esta enzima, se reduce la producción de ácido úrico y se acumulan sus precursores más solubles (hipoxantina y xantina), que se excretan más fácilmente por la orina. El ácido úrico es el producto final de la degradación de bases púricas (adenina y guanina), no pirimidínicas (opción a falsa). No se relaciona con la síntesis sino con la degradación de purinas (opción b falsa). Su acumulación se debe al exceso de purinas en la dieta (carnes rojas, vísceras, mariscos), no de proteínas en general (opción c falsa). No es un intermediario del ciclo de la urea (opción e falsa).
 
-## Pregunta 15
-Digestión y absorción de lípidos:
-- a) Se requieren sales biliares sintetizadas en al páncreas
-- b) Los triglicéridos se absorban directamente por los enterocitos
-- c) En los enterocitos los triglicéridos dan lugar a la formación de LDL
-- d) La lipasa pancreática actúa en la luz intestinal
-- e) Los lípidos absorbidos se almacenan en el hígado
-Respuesta: d
-
-> Explicación: La lipasa pancreática es secretada por el páncreas exocrino hacia la luz del duodeno, donde actúa sobre los triglicéridos emulsificados por las sales biliares. Hidroliza los enlaces éster en las posiciones sn-1 y sn-3 de los triglicéridos, liberando dos ácidos grasos y un 2-monoacilglicerol, que son absorbidos por los enterocitos. La opción a es falsa porque las sales biliares se sintetizan en el hígado (no en el páncreas) a partir de colesterol. La opción b es incorrecta porque los triglicéridos deben ser hidrolizados antes de ser absorbidos. La opción c es falsa porque en los enterocitos los triglicéridos se re-sintetizan y se empaquetan en quilomicrones (no LDL). La opción e es incorrecta porque los lípidos absorbidos se transportan inicialmente por vía linfática como quilomicrones y se distribuyen a diversos tejidos.
-
-## Pregunta 16
+## Pregunta 14
 En relación a la beta-oxidación:
 - a) Es una ruta metabólica anfibólica
 - b) Genera dos moléculas de ATP por vuelta
@@ -144,14 +120,14 @@ En relación a la beta-oxidación:
 - d) El ácido graso se va degradando en forma de coenzima A
 - e) El transporte mediado por la carnitina es un transporte activo
 
-## Pregunta 17
+## Pregunta 15
 En relación con la fructosa-2,6-bifosfato:
 - a) Es un regulador alostérico de la hexoquinasa
 - b) Su síntesis se encuentra favorecida en presencia del glucagón
 - c) En condiciones de alta glucemia se encuentra favorecida la actividad fructosa-2,6- bifosfatasa
 - d) Es un intermediario de la glucólisis
 
-## Pregunta 18
+## Pregunta 16
 En condiciones de ayuno prolongado:
 - a) Gracias a la insulina se favorece la degradación de glucógeno hepático
 - b) El glucagón favorece la gluconeogénesis
@@ -161,7 +137,7 @@ Respuesta: b,d
 
 > Explicación: En ayuno prolongado, los niveles de glucagón están elevados y los de insulina bajos. La opción b es correcta: el glucagón estimula la gluconeogénesis hepática mediante varios mecanismos — activa la vía AMPc/PKA que induce la transcripción de PEPCK y glucosa-6-fosfatasa, reduce los niveles de fructosa-2,6-bisfosfato (desinhibiendo la fructosa-1,6-bisfosfatasa), y favorece la oxidación de ácidos grasos que proporciona la energía y el acetil-CoA necesarios para la gluconeogénesis. La opción d es correcta: el glucagón también actúa sobre el tejido adiposo activando (vía PKA) la lipasa sensible a hormonas (triacilglicérido lipasa/HSL), promoviendo la lipólisis y la liberación de ácidos grasos y glicerol al torrente sanguíneo. La opción a es falsa porque en ayuno la insulina está baja, y además la insulina favorece la síntesis de glucógeno, no su degradación.
 
-## Pregunta 19
+## Pregunta 17
 Las vitaminas:
 - a) Son un conjunto de compuestos inorgánicos
 - b) No pueden sintetizarse por el hombre
@@ -171,7 +147,7 @@ Respuesta: b,d
 
 > Explicación: La opción b es correcta: las vitaminas son, por definición, compuestos orgánicos esenciales que el organismo humano no puede sintetizar en cantidades suficientes, por lo que deben obtenerse de la dieta. Hay excepciones parciales (la vitamina D se sintetiza en la piel con luz solar, la niacina a partir de triptófano), pero en general el ser humano depende de su ingesta. La opción d es correcta: las vitaminas son indispensables para el correcto funcionamiento del metabolismo, ya que muchas actúan como precursoras de coenzimas esenciales (B₁→TPP, B₂→FAD/FMN, B₃→NAD⁺, B₅→CoA, etc.) o tienen funciones reguladoras y antioxidantes. La opción a es falsa: las vitaminas son compuestos orgánicos, no inorgánicos. La opción c es falsa: las vitaminas no proporcionan energía al ser catabolizadas; funcionan como cofactores o reguladores, no como combustibles metabólicos.
 
-## Pregunta 20
+## Pregunta 18
 La fosfolipasa C activada por hormonas puede convertir fosfatidilinositol 4,5-bifosfato a:
 - a) Diacilglicerol + inositol trifosfato
 - b) Diacilglicerol + inostitol + fosfato
@@ -179,7 +155,7 @@ La fosfolipasa C activada por hormonas puede convertir fosfatidilinositol 4,5-bi
 - d) Glicerol + fosfoserina
 - e) Fosfatidil glicerol + inositol + fosfato
 
-## Pregunta 21
+## Pregunta 19
 ¿Cuál de las siguientes afirmaciones sobre la síntesis de colesterol es cierta?:
 - a) El colesterol es el único producto natural cuya biosíntesis implica unidades de isopreno
 - b) Sólo la mitad de los átomos de carbono del colesterol se derivan del acetato
@@ -190,7 +166,7 @@ Respuesta: c
 
 > Explicación: La síntesis de escualeno se produce por la condensación de dos moléculas de farnesil pirofosfato (C₁₅ cada una) catalizada por la escualeno sintasa. En esta reacción, las dos moléculas de farnesil pirofosfato liberan sus grupos pirofosfato (PPi), formando el escualeno (C₃₀). Por tanto, se liberan 2 moles de PPi por cada mol de escualeno formado. La opción a es falsa porque existen muchos otros productos naturales que utilizan unidades de isopreno (terpenos, carotenoides, vitaminas A, E, K, ubiquinona, dolicol). La opción b es incorrecta porque todos los 27 átomos de carbono del colesterol derivan del acetato (acetil-CoA). La opción d es falsa porque los intermediarios activados no son CDP-derivados. La opción e es incorrecta porque la condensación de isopentenil-PP y dimetilalil-PP para formar geranil-PP es una condensación «cabeza-cola», no «cabeza-cabeza».
 
-## Pregunta 22
+## Pregunta 20
 Cuando un músculo es estimulado a contraerse aeróbicamente, se forma menos ácido láctico que cuando se contrae anaeróbicamente porque:
 - a) La glucólisis no ocurre significativamente en condiciones aeróbicas
 - b) El músculo es metabólicamente menos activo en condiciones aeróbicas que en anaeróbicas
@@ -201,7 +177,7 @@ Respuesta: e
 
 > Explicación: En condiciones aeróbicas, cuando hay oxígeno suficiente, el piruvato generado por la glucólisis es transportado a la mitocondria donde es convertido en acetil-CoA por la piruvato deshidrogenasa, y luego oxidado completamente en el ciclo del ácido cítrico (ciclo de Krebs), generando CO₂, NADH y FADH₂. El NADH citosólico producido en la glucólisis se reoxida a NAD⁺ mediante las lanzaderas mitocondrial (malato-aspartato o glicerol-3-fosfato), por lo que no es necesario utilizar la lactato deshidrogenasa para regenerar NAD⁺. En condiciones anaeróbicas, sin oxígeno, la única forma de regenerar el NAD⁺ necesario para que la glucólisis continúe es reducir el piruvato a lactato. Por eso se forma mucho menos lactato en aerobiosis.
 
-## Pregunta 23
+## Pregunta 21
 Una deficiencia de carnitina, sería de esperar que interfiriese en:
 - a) La betaoxidacion
 - b) La formación de cuerpos cetónicos a partir de acetil-CoA
@@ -209,7 +185,7 @@ Una deficiencia de carnitina, sería de esperar que interfiriese en:
 - d) La movilización de los triacilgliceroles almacenados en el tejido adiposo
 - e) LA captación celular de los ácidos grasos de la sangre
 
-## Pregunta 24
+## Pregunta 22
 El citrato estimula la síntesis de ácidos grasos:
 - a) Activando alostéricamente la acetil CoA carboxilasa
 - b) Proporcionando un mecanismo para transportar el acetilCoA desde la mitocondria al citosol
@@ -219,7 +195,7 @@ Respuesta: a,b,c
 
 > Explicación: El citrato cumple múltiples funciones que estimulan la síntesis de ácidos grasos. (a) El citrato es un activador alostérico de la acetil-CoA carboxilasa (ACC), la enzima que cataliza el paso comprometido de la lipogénesis: la carboxilación de acetil-CoA a malonil-CoA. (b) El citrato es el vehículo de transporte del acetil-CoA desde la mitocondria al citosol. El acetil-CoA mitocondrial se condensa con oxalacetato para formar citrato (citrato sintasa), que sale al citosol a través del transportador de tricarboxilatos, donde la ATP-citrato liasa lo escinde de nuevo en acetil-CoA y oxalacetato. (c) El oxalacetato generado en el citosol se convierte en malato (malato deshidrogenasa) y luego en piruvato por la enzima málica, que produce NADPH y CO₂; este NADPH es utilizado para la síntesis reductora de ácidos grasos. La opción d no es un mecanismo por el cual el citrato estimula la lipogénesis.
 
-## Pregunta 25
+## Pregunta 23
 Las enzimas digestivas de las proteínas:
 - a) Pueden ser endopeptidasa o exopeptidasas
 - b) Se sintetizan en forma de zimógenos
@@ -229,7 +205,7 @@ Respuesta: a,b,c,d
 
 > Explicación: Todas las opciones son correctas. (a) Las proteasas digestivas incluyen endopeptidasas (como pepsina, tripsina, quimotripsina y elastasa, que cortan enlaces peptídicos internos) y exopeptidasas (como carboxipeptidasa A y B, que eliminan aminoácidos desde los extremos). (b) Se sintetizan como precursores inactivos (zimógenos) para evitar la autodigestión de los tejidos que las producen: pepsinógeno, tripsinógeno, quimotripsinógeno, proelastasa, procarboxipeptidasas. (c) Todas actúan hidrolizando enlaces peptídicos, ya sean internos o terminales. (d) El páncreas exocrino es la principal fuente de proteasas digestivas, secretando tripsinógeno, quimotripsinógeno, proelastasa y procarboxipeptidasas al duodeno; el estómago produce pepsinógeno.
 
-## Pregunta 26
+## Pregunta 24
 Funciones de la insulina:
 - a) En el hígado estimula la síntesis de glucógeno
 - b) En neuronas favorece la gluconeogénesis
@@ -239,17 +215,7 @@ Respuesta: a,c
 
 > Explicación: La insulina es la principal hormona anabólica del organismo. (a) En el hígado, la insulina estimula la síntesis de glucógeno activando la glucógeno sintasa (mediante la activación de la proteína fosfatasa 1 y la inhibición de la GSK-3, glucógeno sintasa quinasa 3) y estimulando la glucoquinasa. (c) En el tejido adiposo, la insulina promueve la lipogénesis y la síntesis de triglicéridos: estimula la captación de glucosa (vía GLUT4), activa la lipoproteína lipasa para captar ácidos grasos de las lipoproteínas circulantes, estimula la síntesis de ácidos grasos, y suprime la lipólisis inhibiendo la lipasa sensible a hormonas. La opción b es falsa porque las neuronas no realizan gluconeogénesis. La opción d es incorrecta porque la insulina inhibe (no estimula) la gluconeogénesis hepática.
 
-## Pregunta 27
-En relación a la regulación del metabolismo del glucógeno:
-- a) La insulina favorece la síntesis de glucógeno por activación de la glucógeno sintasa
-- b) Su síntesis y degradación se llevan a cabo mediante la misma vía metabólica pero en sentido inverso
-- c) El glucagón favorece la degradación de glucógeno por activación mediante fosforilación de la glucógeno fosforilasa
-- d) Glucagón y adrenalina tienen efectos contrarios sobre le metabolismos del glucógeno
-Respuesta: a,c
-
-> Explicación: (a) La insulina promueve la síntesis de glucógeno activando la glucógeno sintasa. Lo hace mediante la activación de la vía PI3K/Akt, que fosforila e inhibe la GSK-3 (glucógeno sintasa quinasa 3), una quinasa que normalmente fosforila e inactiva la glucógeno sintasa. Al inhibir GSK-3, la sintasa permanece desfosforilada y activa. Además, la insulina activa la proteína fosfatasa 1, que desfosforila directamente la glucógeno sintasa. (c) El glucagón, a través de su receptor hepático, activa la adenilato ciclasa → AMPc → PKA → fosforilasa quinasa, que fosforila la glucógeno fosforilasa b (poco activa) convirtiéndola en fosforilasa a (activa), favoreciendo la degradación del glucógeno. La opción b es falsa: la síntesis (glucógeno sintasa, enzima ramificante) y la degradación (fosforilasa, enzima desramificante) utilizan enzimas y vías diferentes. La opción d es falsa porque glucagón y adrenalina tienen efectos similares (ambos estimulan la glucogenólisis), no contrarios.
-
-## Pregunta 28
+## Pregunta 25
 El ciclo de los ácidos tricarboxílicos está regulado mediante:
 - a) La disponibilidad de las enzimas
 - b) Al ser un ciclo sólo está regulado por la presencia de acetil-Coa y oxalacetato
@@ -257,7 +223,7 @@ El ciclo de los ácidos tricarboxílicos está regulado mediante:
 - d) La relación ATP / AMPc
 - e) moduladores de la actividad de las enzimas que catalizan reacciones reversibles
 
-## Pregunta 29
+## Pregunta 26
 Sobre el catabolismo de aminoácidos:
 - a) Genera gran cantidad de energía
 - b) La glutamina puede actuar como transportadora de amonio para evitar problemas de toxicidad
@@ -268,7 +234,7 @@ Respuesta: b
 
 > Explicación: La glutamina actúa como transportador seguro de amonio (NH₄⁺) en la sangre. En los tejidos periféricos, el amonio tóxico liberado del catabolismo de aminoácidos se incorpora al glutamato por la glutamina sintetasa, formando glutamina, un aminoácido neutro y no tóxico. La glutamina viaja por el torrente sanguíneo hasta el hígado, donde la glutaminasa libera el amonio para que entre al ciclo de la urea, o hasta el riñón, donde se excreta como NH₄⁺ en la orina. Las demás opciones son incorrectas: el catabolismo de aminoácidos no es una fuente principal de energía (opción a); la desaminación oxidativa (glutamato deshidrogenasa) es mitocondrial (opción c); el α-cetoglutarato (2-oxoglutarato) es el aceptor de grupos amino más importante en las transaminaciones (opción d); y los esqueletos carbonados se reutilizan como intermediarios del ciclo de Krebs o como precursores gluconeogénicos/cetogénicos (opción e).
 
-## Pregunta 30
+## Pregunta 27
 La mayor reserva de energía (en kilocalorías) en el hombre es:
 - a) La glucosa sanguínea
 - b) El glucógeno hepático

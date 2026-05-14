@@ -1,18 +1,4 @@
-# Examen resuelto 2 — Bioquímica
-
-
-## Pregunta 1
-Sobre gluconeogénesis:
-- a) Es una vía metabólica que permite la conversión de piruvato, lactato, ciertos aminoácidos y otros precursores sencillos, en glucosa.
-- b) El objetivo fundamental de la ruta es la síntesis de glucosa a partir de otros azucares.
-- c) Excepto en las tres etapas irreversibles la vía utiliza las enzimas glucolíticas.
-- d) También utiliza como sustrato acetil-CoA.
-Respuesta: a,c
-> Explicación: La gluconeogénesis es la ruta metabólica que sintetiza glucosa a partir de precursores no glucídicos: piruvato, lactato, glicerol y aminoácidos glucogénicos. Su función principal es mantener la glucemia durante el ayuno, asegurando el suministro de glucosa a tejidos que dependen de ella, como el cerebro y los eritrocitos **(a correcta)**.
->
-> La gluconeogénesis comparte la mayoría de sus reacciones con la glucólisis, ya que son reacciones reversibles catalizadas por las mismas enzimas. Sin embargo, la glucólisis tiene tres pasos irreversibles (catalizados por hexoquinasa, PFK-1 y piruvato quinasa) que en la gluconeogénesis son sustituidos por enzimas específicas: piruvato carboxilasa + PEPCK, fructosa-1,6-bisfosfatasa y glucosa-6-fosfatasa **(c correcta)**.
-
-## Pregunta 2
+# Examen resuelto 2 — Bioquímica## Pregunta 1
 Las células hepáticas pueden liberar glucosa a la sangre a partir de glucógeno a diferencia de las musculares porque:
 - a) El proceso no está sujeto a control hormonal.
 - b) Contienen glucosa-6-fosfatasa.
@@ -24,7 +10,7 @@ Respuesta: b
 >
 > La glucosa-6-fosfatasa es la enzima que cataliza esta desfosforilación, y se encuentra exclusivamente en el hígado (y en menor medida en el riñón), pero no en el músculo. Por esta razón, el hígado puede liberar glucosa a la sangre para mantener la glucemia, mientras que el músculo solo puede usar la glucosa-6-fosfato procedente de su glucógeno para su propio consumo energético a través de la glucólisis **(b correcta)**.
 
-## Pregunta 3
+## Pregunta 2
 Sobre la cadena de transporte electrónico (CTE)
 - a) Participan varios tipos de complejos proteicos que poseen centros especializados para el transporte de electrones.
 - b) La CTE puede colectar electrones procedentes de distintos compuestos (NADH, succinato, glicerol 3-fosfato).
@@ -39,7 +25,7 @@ Respuesta: a,b,c,d
 >
 > La práctica totalidad de los componentes de la CTE son proteínas integrales de la membrana mitocondrial interna, lo que es esencial para mantener la separación de compartimentos necesaria para la quimiosmosis. Solo los transportadores móviles (ubiquinona y citocromo c) se desplazan lateralmente por la membrana o en el espacio intermembrana **(d correcta)**.
 
-## Pregunta 4
+## Pregunta 3
 Sobre el ciclo de los ácidos tricarboxílicos:
 - a) Se considera una vía anfibólica.
 - b) Cada ciclo genera 1 GTP, 1 FADH2, 3 NADH + H+.
@@ -54,7 +40,7 @@ Respuesta: a,b,c,d
 >
 > La primera reacción del ciclo es la condensación del acetil-CoA (2 carbonos) con el oxalacetato (4 carbonos) para formar citrato (6 carbonos), catalizada por la citrato sintasa. Esta reacción es exergónica e irreversible, y constituye uno de los puntos de regulación del ciclo **(d correcta)**.
 
-## Pregunta 5
+## Pregunta 4
 La vía de las pentosas fosfato genera:
 - a) NADPG
 - b) Azúcares de 3 a 7 átomos de carbono
@@ -67,7 +53,7 @@ Respuesta: b,c
 >
 > La ribosa-5-fosfato producida en la fase oxidativa es el azúcar pentosa imprescindible para la biosíntesis de nucleótidos (ATP, GTP, NAD⁺, FAD, coenzima A) y de ácidos nucleicos (DNA y RNA). En células con alta tasa de proliferación, como las de la médula ósea, la demanda de ribosa es especialmente elevada **(c correcta)**.
 
-## Pregunta 6
+## Pregunta 5
 En relación a la regulación del metabolismo del glucógeno:
 - a) La insulina inhibe la degradación del glucógeno en el hígado.
 - b) La adrenalina estimula la degradación de glucógeno en el músculo.
@@ -84,7 +70,7 @@ Respuesta: a,b,c,d
 >
 > La glucógeno fosforilasa es un ejemplo clásico de regulación por modificación covalente: la fosforilación de un residuo de serina específico convierte la forma inactiva (fosforilasa b) en la forma activa (fosforilasa a). Esta modificación es catalizada por la fosforilasa quinasa y revertida por la proteína fosfatasa 1 **(d correcta)**.
 
-## Pregunta 7
+## Pregunta 6
 La glucólisis en el eritrocito produce piruvato que es metabolizado posteriormente a:
 - a) CO2 y H2O
 - b) Etanol
@@ -96,7 +82,7 @@ Respuesta: e
 >
 > El piruvato producido por la glucólisis se convierte en lactato por la lactato deshidrogenasa, una reacción esencial que regenera el NAD⁺ necesario para que la glucólisis pueda continuar funcionando. El lactato se libera a la sangre y viaja al hígado, donde puede ser reconvertido en glucosa a través de la gluconeogénesis (ciclo de Cori) **(e correcta)**.
 
-## Pregunta 8
+## Pregunta 7
 El piruvato es un punto central en el metabolismo que conduce/procede a/de diversas vías:
 - a) Es el producto de la principal vía de degradación de la glucosa, la glucólisis.
 - b) En condiciones aerobias sufre descarboxilación oxidativa a acetilCoA.
@@ -113,7 +99,7 @@ Respuesta: a,b,c,d
 >
 > En organismos como las levaduras, bajo condiciones anaeróbicas, el piruvato se descarboxila a acetaldehído (por la piruvato descarboxilasa) y después se reduce a etanol (por la alcohol deshidrogenasa). Esta fermentación alcohólica es la base de la producción de vino, cerveza y pan **(d correcta)**.
 
-## Pregunta 9
+## Pregunta 8
 Beta oxidación de ácidos grasos:
 - a) El proceso tiene lugar en el citosol.
 - b) En cada ciclo de oxidación se genera acetil-CoA, NADH + H+ y FADH2.
@@ -124,7 +110,7 @@ Respuesta: b,d
 >
 > El acetil-CoA generado no necesita ser transportado a la mitocondria porque la β-oxidación ya ocurre allí. Este acetil-CoA entra directamente en el ciclo de los ácidos tricarboxílicos (ciclo de Krebs) para ser oxidado completamente a CO₂, generando más NADH y FADH₂ que alimentan la cadena de transporte electrónico y la síntesis de ATP **(d correcta)**.
 
-## Pregunta 10
+## Pregunta 9
 Respecto a la regulación de la actividad de la fosfofructoquinasa I:
 - a) Se activa por un aumento de ATP.
 - b) Se activa por fructosa-2,6-bisfosfato.
@@ -137,7 +123,7 @@ Respuesta: b,d
 >
 > La PFK-1 se inhibe cuando la concentración de protones (H⁺) aumenta, es decir, cuando el pH intracelular desciende. Esto ocurre, por ejemplo, cuando se acumula ácido láctico durante el ejercicio anaeróbico intenso. Esta inhibición actúa como un mecanismo protector: previene la producción excesiva de lactato y la acidosis que podría dañar la célula **(d correcta)**.
 
-## Pregunta 11
+## Pregunta 10
 La insulina se une a un receptor que:
 - a) Está acoplado a una proteína G.
 - b) Posee actividad tirosina quinasa.
@@ -149,7 +135,7 @@ Respuesta: b
 >
 > Cuando la insulina se une a las subunidades α, provoca un cambio conformacional que activa la actividad tirosina quinasa intrínseca de las subunidades β. Estas se autofosforilan en residuos de tirosina y, a continuación, fosforilan sustratos intracelulares como las proteínas IRS (sustrato del receptor de insulina), desencadenando cascadas de señalización que incluyen las vías PI3K/Akt y Ras/MAPK. Estas cascadas median los efectos metabólicos y de crecimiento de la insulina **(b correcta)**.
 
-## Pregunta 12
+## Pregunta 11
 En relación a los receptores acoplados a proteínas G:
 - a) El AMPc se hidroliza por la activación de la proteína quinasa A
 - b) La subunidad alfa de las proteínas G intercambia GTP por GDP como consecuencia de la estimulación de su receptor acoplado
@@ -157,7 +143,7 @@ En relación a los receptores acoplados a proteínas G:
 - d) La toxina colérica estimula la actividad GTPasa de la subunidad  de la proteína G
 - e) Las hormonas esteroideas interaccionan siempre con este tipo de receptores
 
-## Pregunta 13
+## Pregunta 12
 Sobre la glucólisis
 - a) A partir de una molécula de glucosa se generan tres moléculas de piruvato
 - b) Todas las reacciones son totalmente reversibles
@@ -169,7 +155,7 @@ Respuesta: e
 >
 > Sin esta regeneración de NAD⁺, la glucólisis se detendría por agotamiento de este coenzima oxidado. La fermentación láctica permite que las células que carecen de mitocondrias (como los eritrocitos) o que están en condiciones de oxígeno limitado (como el músculo durante ejercicio intenso) puedan seguir obteniendo ATP a través de la glucólisis **(e correcta)**.
 
-## Pregunta 14
+## Pregunta 13
 En el hígado el incremento de glucagón conduce a:
 - a) Incremento en la actividad piruvato quinasa
 - b) Disminución en la concentración de fructosa 2,6 biofosfato
@@ -181,7 +167,7 @@ Respuesta: b
 >
 > El mecanismo clave es la regulación de la enzima bifuncional PFK-2/FBPasa-2 mediante fosforilación. El glucagón, a través de la vía AMPc-PKA, fosforila esta enzima bifuncional, lo que inactiva su actividad quinasa (PFK-2) y activa su actividad fosfatasa (FBPasa-2). El resultado es una disminución en la concentración de fructosa-2,6-bisfosfato (F-2,6-BP). Como la F-2,6-BP es el principal activador de la PFK-1 (glucólisis) y el principal inhibidor de la FBPasa-1 (gluconeogénesis), su descenso frena la glucólisis y activa la gluconeogénesis **(b correcta)**.
 
-## Pregunta 15
+## Pregunta 14
 En relación al ciclo de los ácidos tricarboxílicos (ciclo de Krebs):
 - a) La reacción catalizada por la isocitrato deshidrogenasa es un punto de regulación
 - b) Genera poco poder reductor
@@ -192,7 +178,7 @@ Respuesta: a,c
 >
 > Cuando la relación [ATP]/[ADP] es elevada, esto indica que la célula tiene suficiente energía y no necesita producir más ATP. En estas condiciones, el ATP inhibe directamente la isocitrato deshidrogenasa y la citrato sintasa, mientras que la acumulación de NADH (consecuencia de una cadena respiratoria ralentizada) inhibe las tres deshidrogenasas del ciclo. El resultado es una disminución global de la velocidad del ciclo **(c correcta)**.
 
-## Pregunta 16
+## Pregunta 15
 La teoría quimiosmótica está relacionada con una de las siguientes rutas metabólicas:
 - a) Glucólisis
 - b) Vía de las pentosas fosfato
@@ -200,7 +186,7 @@ La teoría quimiosmótica está relacionada con una de las siguientes rutas meta
 - d) Síntesis de glucógeno
 - e) Fermentación láctica
 
-## Pregunta 17
+## Pregunta 16
 En la glucólisis, ¿cuál es la etapa limitante de flujo?
 - a) La catalizada por la hexoquinasa
 - b) La catalizada por la 6-fosfofructoquinasa 1
@@ -212,7 +198,7 @@ Respuesta: b
 >
 > La PFK-1 está sometida a una regulación alostérica extraordinariamente compleja: se activa por AMP, ADP, fructosa-2,6-bisfosfato y Pi, y se inhibe por ATP, citrato y H⁺. Aunque la hexoquinasa y la piruvato quinasa también son puntos de regulación, la PFK-1 es el punto de compromiso de la ruta: una vez que la fructosa-6-fosfato se fosforila a fructosa-1,6-bisfosfato, la molécula ya está comprometida a continuar por la glucólisis **(b correcta)**.
 
-## Pregunta 18
+## Pregunta 17
 La presencia de Fructosa 2,6-bifosfato y AMP posibilitan que ocurra:
 - a) La gluconeogénesis
 - b) La glucólisis
@@ -224,7 +210,7 @@ Respuesta: b
 >
 > Simultáneamente, estas mismas moléculas inhiben la enzima opuesta, la fructosa-1,6-bisfosfatasa (de la gluconeogénesis), asegurando que las dos rutas no funcionen al mismo tiempo. El efecto combinado de ambas señales favorece claramente la glucólisis **(b correcta)**.
 
-## Pregunta 19
+## Pregunta 18
 Después de una ingesta de hidratos de carbono ocurre:
 - a) La segregación de Insulina a sangre por parte del páncreas
 - b) La aparición de transportadores Glut4 en tejido adiposo y muscular
@@ -237,7 +223,7 @@ Respuesta: a,b,c
 >
 > En el hígado, la insulina activa la desfosforilación de la enzima bifuncional PFK-2/FBPasa-2. En su forma desfosforilada, predomina la actividad quinasa (PFK-2), lo que aumenta la concentración de fructosa-2,6-bisfosfato. Este incremento activa la PFK-1 y, por tanto, estimula la glucólisis hepática para procesar el exceso de glucosa **(c correcta)**.
 
-## Pregunta 20
+## Pregunta 19
 Como explica que la adrenalina si tiene el mismo sistema de transducción de señales que el glucagón, en corazón produzca la activación de la glucólisis:
 - a) No produce la activación de la glucólisis
 - b) Produce la activación de la gluneogénesis al igual que en hígado el glucagón
@@ -249,7 +235,7 @@ Respuesta: d
 >
 > Esto se explica por la existencia de isoenzimas de la PFK-2/FBPasa-2 con propiedades diferentes según el tejido. La isoforma cardíaca de la PFK-2/FBPasa-2 responde de manera opuesta a la fosforilación por PKA: cuando se fosforila, se activa su dominio quinasa (PFK-2) en lugar de su dominio fosfatasa, lo que aumenta la producción de F-2,6-BP y, en consecuencia, estimula la glucólisis. Esta diferencia isoenzimática permite que una misma señal hormonal (adrenalina) produzca respuestas metabólicas opuestas en diferentes tejidos, adaptadas a sus necesidades específicas: el corazón necesita más energía, no más glucosa en sangre **(d correcta)**.
 
-## Pregunta 21
+## Pregunta 20
 En relación a la molécula de ATP:
 - a) Su única función es favorecer el transporte activo a través de membranas.
 - b) Su hidrólisis no genera energía puesto que es una reacción endotérmica
@@ -261,7 +247,7 @@ Respuesta: e
 >
 > Este mecanismo se utiliza en reacciones que necesitan un impulso termodinámico extra, como la activación de ácidos grasos (acil-CoA sintetasa), la activación de aminoácidos para la síntesis proteica (aminoacil-tRNA sintetasas) y la síntesis de ácidos nucleicos. En todos estos casos, la hidrólisis acoplada del PPi garantiza que la reacción se complete **(e correcta)**.
 
-## Pregunta 22
+## Pregunta 21
 Señala la respuesta correcta en relación al catabolismo de glúcidos:
 - a) La piruvato quinasa cataliza la transformación de piruvato en acetil CoA
 - b) La presencia de fructosa 2,6 bifosfato favorece la glucólisis
@@ -273,7 +259,7 @@ Respuesta: b
 >
 > La concentración de F-2,6-BP depende de la enzima bifuncional PFK-2/FBPasa-2, regulada por señales hormonales: la insulina aumenta sus niveles (favoreciendo la glucólisis) y el glucagón los disminuye (favoreciendo la gluconeogénesis) **(b correcta)**.
 
-## Pregunta 23
+## Pregunta 22
 En el ciclo de Krebs:
 - a) Es una ruta catabólica
 - b) Las reacciones anapleróticas son aquellas en las que se produce ATP
@@ -281,7 +267,7 @@ En el ciclo de Krebs:
 - d) Mediante sus reacciones el acetil-CoA se reduce completamente
 - e) F. Se lleva a cabo en el citoplasma al igual que la glucólisis
 
-## Pregunta 24
+## Pregunta 23
 Uno de los siguientes factores NO participa en la regulación recíproca de la glucólisis- gluconeogénesis:
 - a) Fructosa 2,6-bifosfato
 - b) Insulina/glucagón
@@ -293,7 +279,7 @@ Respuesta: d
 >
 > El malato es un intermediario del ciclo de Krebs y de la lanzadera malato-aspartato, pero no participa como regulador en la coordinación recíproca de glucólisis y gluconeogénesis. Aunque el malato puede ser sustrato gluconeogénico (al convertirse en oxalacetato), no actúa como señal reguladora que module la actividad de las enzimas clave de estas rutas **(d correcta)**.
 
-## Pregunta 25
+## Pregunta 24
 En relación a la regulación del metabolismo del glucógeno:
 - a) Tanto la glucógeno fosforilasa como glucógeno sintasa están reguladas mediante modificación covalente
 - b) La insulina favorece la degradación del glucógeno hepático
@@ -301,7 +287,7 @@ En relación a la regulación del metabolismo del glucógeno:
 - d) En el músculo, la glucógeno fosforilasa se inactiva en respuesta a la adrenalina
 - e) En el hígado, la glucógeno sintasa y la glucógeno fosforilasa pueden estar activas al mismo tiempo
 
-## Pregunta 26
+## Pregunta 25
 Teoría quimiosmótica de la fosforilación oxidativa:
 - a) Necesita que la membrana externa mitocondrial sea impermeable a los protones.
 - b) El funcionamiento redox del complejo I supone la producción y expulsión citoplasmática de un protón.
@@ -309,7 +295,7 @@ Teoría quimiosmótica de la fosforilación oxidativa:
 - d) La ATPasa ha de formar parte de todos y cada uno de los cuatro complejos constituyentes de la cadena respiratoria.
 - e) El funcionamiento de la cadena origina un potencial eléctrico en la membrana interna, pero no un potencial químico
 
-## Pregunta 27
+## Pregunta 26
 Glucólisis y ácido láctico:
 - a) Su producción muscular se debe a la actuación de bacterias lácticas específicas.
 - b) La lactato deshidrogenasa de músculo favorece la conversión del piruvato en lactato.
@@ -321,7 +307,7 @@ Respuesta: b
 >
 > La conversión de piruvato en lactato permite mantener activa la glucólisis al reciclar el NAD⁺ que consume la gliceraldehído-3-fosfato deshidrogenasa. El lactato producido no se reconvierte en glucógeno en el propio músculo (carece de las enzimas gluconeogénicas necesarias), sino que se transporta al hígado donde, a través de la gluconeogénesis, se reconvierte en glucosa (ciclo de Cori) **(b correcta)**.
 
-## Pregunta 28
+## Pregunta 27
 Características de la vía de las pentosas fosfato:
 - a) No depende de la presencia de fosfato.
 - b) No funciona en ausencia de oxígeno.
@@ -329,24 +315,7 @@ Características de la vía de las pentosas fosfato:
 - d) No tiene lugar en eritrocitos.
 - e) No opera en células en las que haya una intensa síntesis de ácidos nucleicos o de ácidos grasos.
 
-## Pregunta 29
-Se conocen mecanismos reguladores glucolíticos/gluconeogénicos diversos que pueden comportar la participación de:
-- a) Isoenzimas con distintas propiedades cinéticas.
-- b) Efectores alostéricos retroinhibidores o de tipo de señal energética.
-- c) Regulación hormonal a través de mecanismos de fosforilación/ defosforilación y de control de síntesis de efectores.
-- d) Regulación hormonal a través de fenómenos de inducción o represesión genética.
-Respuesta: a,b,c,d
-> Explicación: La regulación de la glucólisis y la gluconeogénesis emplea simultáneamente múltiples mecanismos de control para asegurar una respuesta precisa y adaptada a las condiciones del organismo.
->
-> Las isoenzimas permiten que un mismo paso catalítico funcione de forma diferente según el tejido. Por ejemplo, la hexoquinasa muscular tiene alta afinidad por glucosa y se satura fácilmente, mientras que la glucoquinasa hepática solo se activa con glucosa elevada en sangre **(a correcta)**.
->
-> Los efectores alostéricos proporcionan regulación rápida e inmediata. El ATP y el citrato inhiben la PFK-1 cuando la célula tiene suficiente energía; el AMP y la F-2,6-BP la activan cuando necesita más. Estos moduladores reflejan directamente el estado energético celular **(b correcta)**.
->
-> Las hormonas como insulina, glucagón y adrenalina regulan enzimas clave mediante cascadas de fosforilación/desfosforilación a través de quinasas (PKA) y fosfatasas (PP1). Además, controlan la síntesis de efectores como la F-2,6-BP a través de la enzima bifuncional PFK-2/FBPasa-2 **(c correcta)**.
->
-> A más largo plazo, la regulación hormonal también actúa a nivel génico: la insulina induce la expresión de glucoquinasa y piruvato quinasa, mientras que el glucagón y los glucocorticoides inducen la expresión de PEPCK y glucosa-6-fosfatasa, adaptando la maquinaria enzimática de la célula **(d correcta)**.
-
-## Pregunta 30
+## Pregunta 28
 Regulación de las enzimas gluconeogénicas fosfoenolpiruvatocarboxiquinasa (PEPCK), fructosa-1,6-bisfosfatasa (1,6-FBP-asa) yglucosa-6-fosfatasa(6-GP-asa):
 - a) Todas son regulables hormonalmente.
 - b) La 6-GP-asa muscular es inhibida por citrato.
