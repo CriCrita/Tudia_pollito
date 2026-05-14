@@ -360,22 +360,16 @@ def cargar_temario() -> str:
 
 def cargar_preguntas(filtro_archivos: list[str] | None = None) -> list[dict]:
     preguntas = []
-    for carpeta in ("examenes_resueltos", "examenes_sin_resolver"):
-        archivos = listar_archivos(carpeta)
-        for a in archivos:
-            if filtro_archivos is not None and a["nombre"] not in filtro_archivos:
-                continue
-            texto = a["ruta"].read_text(encoding="utf-8")
-            preguntas.extend(parsear_preguntas(texto, origen=a["nombre"]))
+    for a in listar_archivos("examenes_resueltos"):
+        if filtro_archivos is not None and a["nombre"] not in filtro_archivos:
+            continue
+        texto = a["ruta"].read_text(encoding="utf-8")
+        preguntas.extend(parsear_preguntas(texto, origen=a["nombre"]))
     return preguntas
 
 
 def listar_temas_disponibles() -> list[str]:
-    temas = set()
-    for carpeta in ("examenes_resueltos", "examenes_sin_resolver"):
-        for a in listar_archivos(carpeta):
-            temas.add(a["nombre"])
-    return sorted(temas)
+    return sorted(a["nombre"] for a in listar_archivos("examenes_resueltos"))
 
 
 def barajar_opciones(pregunta: dict) -> dict:
@@ -738,17 +732,33 @@ def pagina_inicio():
     es_repaso = "Repaso" in modo
 
     # Selector de documentos
-    with st.expander("📂 Seleccionar exámenes", expanded=False):
-        seleccionar_todos = st.checkbox("Seleccionar todos", value=True)
-        if seleccionar_todos:
-            temas_elegidos = temas
-        else:
-            temas_elegidos = st.multiselect(
-                "Elige los exámenes:",
-                options=temas,
-                default=temas,
-            )
+    @st.fragment
+    def selector_examenes():
+        col_all, col_none = st.columns(2)
+        with col_all:
+            if st.button("Seleccionar todos", use_container_width=True):
+                for t in temas:
+                    st.session_state[f"exam_{t}"] = True
+        with col_none:
+            if st.button("Deseleccionar todos", use_container_width=True):
+                for t in temas:
+                    st.session_state[f"exam_{t}"] = False
 
+        ncols = 2
+        cols = st.columns(ncols)
+        elegidos = []
+        for i, t in enumerate(temas):
+            if f"exam_{t}" not in st.session_state:
+                st.session_state[f"exam_{t}"] = True
+            with cols[i % ncols]:
+                if st.checkbox(t, key=f"exam_{t}"):
+                    elegidos.append(t)
+        st.session_state.temas_elegidos = elegidos
+
+    with st.expander("📂 Seleccionar exámenes", expanded=False):
+        selector_examenes()
+
+    temas_elegidos = st.session_state.get("temas_elegidos", temas)
     filtro = temas_elegidos if temas_elegidos else None
     preguntas_todas = cargar_preguntas(filtro)
 
