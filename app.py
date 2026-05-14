@@ -717,33 +717,8 @@ def pagina_inicio():
     st.markdown("**Practica tus exámenes tipo test — Bioquímica**")
     st.divider()
 
-    preguntas_todas = cargar_preguntas()
-    temario = cargar_temario()
     temas = listar_temas_disponibles()
-
-    vistas = st.session_state.get("vistas_data", set())
-    no_vistas = len([p for p in preguntas_todas if id_pregunta(p) not in vistas])
-
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        st.metric("Preguntas totales", len(preguntas_todas))
-    with col2:
-        st.metric("Sin estrenar", no_vistas)
-    with col3:
-        st.metric("Temario", "Sí" if temario else "No")
-
-    if not preguntas_todas:
-        st.warning(
-            "No hay preguntas cargadas. Añade archivos `.md` o `.txt` en:\n\n"
-            "- `data/examenes_resueltos/`\n"
-            "- `data/examenes_sin_resolver/`\n\n"
-            "Consulta el README.md para ver el formato."
-        )
-        return
-
-    st.divider()
-
-    preguntas_filtradas = preguntas_todas
+    temario = cargar_temario()
 
     # Selección de modo
     opciones_modo = [
@@ -761,6 +736,43 @@ def pagina_inicio():
         modo = "🎯 Práctica"
 
     es_repaso = "Repaso" in modo
+
+    # Selector de documentos
+    with st.expander("📂 Seleccionar exámenes", expanded=False):
+        seleccionar_todos = st.checkbox("Seleccionar todos", value=True)
+        if seleccionar_todos:
+            temas_elegidos = temas
+        else:
+            temas_elegidos = st.multiselect(
+                "Elige los exámenes:",
+                options=temas,
+                default=temas,
+            )
+
+    filtro = temas_elegidos if temas_elegidos else None
+    preguntas_todas = cargar_preguntas(filtro)
+
+    vistas = st.session_state.get("vistas_data", set())
+    no_vistas = len([p for p in preguntas_todas if id_pregunta(p) not in vistas])
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.metric("Preguntas totales", len(preguntas_todas))
+    with col2:
+        st.metric("Sin estrenar", no_vistas)
+    with col3:
+        st.metric("Temario", "Sí" if temario else "No")
+
+    if not preguntas_todas:
+        st.warning(
+            "No hay preguntas cargadas. Selecciona al menos un examen arriba,\n\n"
+            "o añade archivos `.md` / `.txt` en `data/examenes_resueltos/`."
+        )
+        return
+
+    st.divider()
+
+    preguntas_filtradas = preguntas_todas
 
     if es_repaso:
         ids_falladas = obtener_preguntas_falladas()
